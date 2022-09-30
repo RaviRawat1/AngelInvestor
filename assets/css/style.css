@@ -43,37 +43,203 @@ h6 {
 .row-gap {
     display: flex;
     flex-direction: row;
-    gap: 50px;
 }
 
-.row_flex {
-    display: flex;
-    flex-direction: row;
+.responsive_image {
+    max-width: 100%;
+    height: auto;
 }
+
+
+
+@media screen and (max-width:450px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile_only{
+        width: 100%;
+        margin: 20px 0;
+        color:#E7E7E7;
+    }
+
+    .row-gap {
+        gap: 10px;
+    }
+
+    .margin_30_per_M {
+        margin-top: 30%;
+    }
+
+    .margin_28_t_per_M {
+        margin-left: 28%;
+    }
+
+    .margin_10_per_M {
+        margin-top: 10%;
+    }
+
+    .mobile_center {
+        margin: 0 auto;
+    }
+
+    .col_flex_M {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile_Image {
+        height: 300px;
+        width: 350px;
+        margin-left: 8%;
+    }
+
+    .mobile_Image_m_l {
+        height: 300px;
+        width: 400px;
+        margin-left: 10%;
+    }
+
+    .mobile_w_100 {
+        width: 100%;
+    }
+
+    .mobile_text_center {
+        text-align: center;
+    }
+
+    .investor_portfolio_container_M {
+        margin: 8%;
+    }
+
+    .grid_2_2_M {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .grid_3_2_M {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .grid_2_2_g10_M {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    .space_between_M {
+        justify-content: center;
+    }
+
+    .flex_row_M {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .width_80_M {
+        width: 80%;
+    }
+
+    
+}
+
+@media screen and (min-width:451px) {
+    .row-gap {
+        gap: 50px;
+    }
+
+    .margin_10_per_D {
+        margin-top: 10%;
+    }
+
+    .row_flex_D {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .we_turn_investment_D {
+        align-items: center;
+        padding: 20px 80px;
+    }
+
+    .desk_50_per {
+        width: 50%
+    }
+
+    .margin_30_per_D {
+        margin-top: 30%;
+    }
+
+    .investor_portfolio_container_D {
+        margin: 0 70px;
+    }
+
+    .space_evenly_D {
+        justify-content: space-evenly;
+    }
+
+    .width_40_D {
+        width: 40%;
+    }
+
+    .width_60_D {
+        width: 60%;
+    }
+
+    .width_120_D {
+        width: 120%;
+    }
+
+    .iconinc_companies_D {
+        background-image: url(assets/Images/bg_43.png);
+        background-repeat: no-repeat;
+        background-size: 70% auto;
+    }
+
+    .mobile_only{
+        display: none;
+    }
+}
+
+.investor_portfolio_container_D {
+    align-items: center;
+    ;
+
+}
+
 
 
 /* Slider */
 
 #demos .owl-carousel {
-  margin: 2rem 0;
+    margin: 2rem 0;
 }
 
 #demos .owl-carousel .item h4 {
-  color: #fff;
-  font-weight: 400;
-  margin-top: 0rem;
-}
-#demos .owl-carousel .item-video {
-  height: 300px;
-}
-#demos #setup {
-  margin-top: 4rem;
-}
-#demos .demo-list h5 {
-  margin: 0;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0rem;
 }
 
-.owl-theme .owl-nav{
+#demos .owl-carousel .item-video {
+    height: 300px;
+}
+
+#demos #setup {
+    margin-top: 4rem;
+}
+
+#demos .demo-list h5 {
+    margin: 0;
+}
+
+.owl-theme .owl-nav {
     margin-top: 0 !important;
 }
 
@@ -130,9 +296,9 @@ h6 {
 
 /* Footer */
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: rgb(255,102,203);
-} 
+    border-color: rgb(255, 102, 203);
+}
