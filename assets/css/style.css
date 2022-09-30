@@ -1,0 +1,138 @@
+body {
+    background-image: url(/assets/Images/bgImage3.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% auto !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Cormorant SC;
+    src: url(/assets/fonts/CormorantSC-Bold.ttf);
+    src: url(/assets/fonts/CormorantSC-Light.ttf);
+    src: url(/assets/fonts/CormorantSC-Medium.ttf);
+    src: url(/assets/fonts/CormorantSC-Regular.ttf);
+    src: url(/assets/fonts/CormorantSC-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/Inter-VariableFont.ttf);
+}
+
+.headerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+.row-gap {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.row_flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Slider */
+
+#demos .owl-carousel {
+  margin: 2rem 0;
+}
+
+#demos .owl-carousel .item h4 {
+  color: #fff;
+  font-weight: 400;
+  margin-top: 0rem;
+}
+#demos .owl-carousel .item-video {
+  height: 300px;
+}
+#demos #setup {
+  margin-top: 4rem;
+}
+#demos .demo-list h5 {
+  margin: 0;
+}
+
+.owl-theme .owl-nav{
+    margin-top: 0 !important;
+}
+
+/* Slider */
+
+
+/* Swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 70%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 70%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 70%;
+}
+
+/* Swiper */
+
+
+
+/* Footer */
+
+/* Footer */
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
