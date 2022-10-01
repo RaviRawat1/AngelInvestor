@@ -57,10 +57,10 @@ h6 {
         display: none;
     }
 
-    .mobile_only{
+    .mobile_only {
         width: 100%;
         margin: 20px 0;
-        color:#E7E7E7;
+        color: #E7E7E7;
     }
 
     .row-gap {
@@ -137,6 +137,10 @@ h6 {
         justify-content: center;
     }
 
+    .align_center_M{
+        align-items: center;
+    }
+
     .flex_row_M {
         display: flex;
         flex-direction: row;
@@ -146,7 +150,7 @@ h6 {
         width: 80%;
     }
 
-    
+
 }
 
 @media screen and (min-width:451px) {
@@ -202,15 +206,20 @@ h6 {
         background-size: 70% auto;
     }
 
-    .mobile_only{
+    .mobile_only {
         display: none;
+    }
+
+    .flex_col_end_JiC {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
     }
 }
 
 .investor_portfolio_container_D {
     align-items: center;
-    ;
-
 }
 
 
