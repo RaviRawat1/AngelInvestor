@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 
     <!-- Stylesheets -->
     <!-- <link rel="stylesheet" href="assets/css/docs.theme.min.css"> -->
@@ -20,14 +26,19 @@
     <script src="assets/js/owlcarousel/owl.carousel.js"></script>
 
     <title>Document</title>
+
 </head>
 
 <body>
     <!-- Header -->
-
-    <section class="headerMenu">
-        <div class="mobile_center">
+    <!-- <div class="mobile_only background_img"></div> -->
+    <section class="headerMenu_D">
+        <div class="flex_row_M space_between_M headerMenu_M">
+            <a href="javascript:void(0)" class="mobile_only_none"><img src="assets/Images/chat_icon.png" /></a>
             <a href="javascript:void(0)"><img src="assets/Images/logo.png" /></a>
+            <button id="btn-menu" class="mobile_only_none">
+                <img src="assets/Images/menu_Icon.png" />
+            </button>
         </div>
         <div class="row-gap desktop-only" style="margin-top: 10px;">
             <a href="javascript:void(0)"
@@ -48,7 +59,30 @@
             <button
                 style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; width: 128px; background: #FFFFFF; border-radius: 5px;height: 36px; color: #4D21E5;;">
                 Let's Talk</button>
-        </div>
+
+            </div>
+            <div class="mobile_only mobile_menu mobile_menu_container">
+                <ol class="mobile_menu_orderList">
+                    <li>
+                     <a href="javascript:void(0)"> Home </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">For Investors </a>
+                    </li>
+                    
+                    <li>
+                        <a href="javascript:void(0)">For Founders</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Resources</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Company</a>
+                    </li>
+                </ol>
+            </div>
+
+
     </section>
 
 
@@ -79,9 +113,8 @@
         </ul>
       </header> -->
 
-    <section class="margin_10_per_D margin_30_per_M">
-        <h3
-            style="font-family:'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 83px; line-height: 85%; text-align: center; color: #FFB7E3;">
+    <section class="margin_10_per_D margin_8_per_M">
+        <h3 class="text_C_SC_font_83_pink_D text_C_SC_font_83_pink_M">
             Invest in <br> World-changing Startups
         </h3>
         <p
@@ -90,8 +123,9 @@
             atque <br> corrupti quos dolores et quas molestias excepturi sint
         </p>
     </section>
+    <!-- </div> -->
 
-    <section style="margin-top: 25%;">
+    <section class="margin_top_mobile margin_20_per_D">
         <div class="row_flex_D col_flex_M we_turn_investment_D">
             <div class="mobile_w_100 desk_50_per">
                 <img src="assets/Images/img_1.png" class="mobile_Image" />
@@ -137,8 +171,9 @@
                     <div class="owl-carousel owl-theme">
                         <div class="item">
                             <div class="row_flex_D investor_portfolio_container_D investor_portfolio_container_M">
-                                <img src="/assets/Images/img_2.png" class="width_40_D" style="width: 422.96px; height: 319px;" />
-                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_between_M">
+                                <img src="/assets/Images/img_2.png" class="width_40_D"
+                                    style="width: 422.96px; height: 319px;" />
+                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_center_M">
                                     <div>
                                         <img src="/assets/Images/img_3.png" class="responsive_image"
                                             style="width: 130px; height: 62px;" />
@@ -192,8 +227,9 @@
                         </div>
                         <div class="item">
                             <div class="row_flex_D investor_portfolio_container_D investor_portfolio_container_M">
-                                <img src="/assets/Images/img_2.png" class="width_40_D" style="width: 422.96px; height: 319px;" />
-                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_between_M">
+                                <img src="/assets/Images/img_2.png" class="width_40_D"
+                                    style="width: 422.96px; height: 319px;" />
+                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_center_M">
                                     <div>
                                         <img src="/assets/Images/img_3.png" class="responsive_image"
                                             style="width: 130px; height: 62px;" />
@@ -247,8 +283,9 @@
                         </div>
                         <div class="item">
                             <div class="row_flex_D investor_portfolio_container_D investor_portfolio_container_M">
-                                <img src="/assets/Images/img_2.png" class="width_40_D" style="width: 422.96px; height: 319px;" />
-                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_between_M">
+                                <img src="/assets/Images/img_2.png" class="width_40_D"
+                                    style="width: 422.96px; height: 319px;" />
+                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_center_M">
                                     <div>
                                         <img src="/assets/Images/img_3.png" class="responsive_image"
                                             style="width: 130px; height: 62px;" />
@@ -302,8 +339,9 @@
                         </div>
                         <div class="item">
                             <div class="row_flex_D investor_portfolio_container_D investor_portfolio_container_M">
-                                <img src="/assets/Images/img_2.png" class="width_40_D" style="width: 422.96px; height: 319px;" />
-                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_between_M">
+                                <img src="/assets/Images/img_2.png" class="width_40_D"
+                                    style="width: 422.96px; height: 319px;" />
+                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_center_M">
                                     <div>
                                         <img src="/assets/Images/img_3.png" class="responsive_image"
                                             style="width: 130px; height: 62px;" />
@@ -436,10 +474,11 @@
         </div> -->
     </section>
 
-    <section style="background: #160D2B; margin-top: 70px; width: 100%; min-height: 558px; max-height: 1200px; padding-bottom: 20px;">
+    <section
+        style="background: #160D2B; margin-top: 70px; width: 100%; min-height: 558px; max-height: 1200px; padding-bottom: 20px;">
         <div class="row_flex_D we_turn_investment_D" style="padding-top: 4%;">
             <div class="mobile_w_100 desk_50_per">
-                <img src="assets/Images/img_7.png" class="mobile_Image_m_l"/>
+                <img src="assets/Images/img_7.png" class="mobile_Image_m_l" />
             </div>
             <div class="mobile_center mobile_w_100 desk_50_per">
                 <h5 class="mobile_text_center"
@@ -451,7 +490,7 @@
                     We’re giving more people the opportunity to participate in the<br> venture economy and more startups
                     the resources they need to<br> change the world.
                 </p>
-                <div class="flex_row_M space_between_M">
+                <div class="flex_row_M space_center_M">
                     <button
                         style="width: 150px; height: 37px; box-sizing: border-box; background-color: #160D2B; border: 1px solid #FFFFFF; border-radius: 5px; font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; margin-right: 30px;">
                         Learn More
@@ -477,7 +516,7 @@
         </p>
         <div class="row_flex_D grid_2_2_g10_M" style="margin-top: 30px; justify-content: space-evenly;">
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Mustafa.png" class="width_120_D width_80_M"/>
+                <img src="assets/Images/Mustafa.png" class="width_120_D width_80_M" />
                 <p
                     style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
                     P C Mustafa
@@ -485,7 +524,7 @@
                 <img src="assets/Images/musicBeat.png" />
             </div>
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Bhavesh.png" class="width_120_D width_80_M"/>
+                <img src="assets/Images/Bhavesh.png" class="width_120_D width_80_M" />
                 <p
                     style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
                     Bhavesh Aggarwal
@@ -493,7 +532,7 @@
                 <img src="assets/Images/gulet.png" />
             </div>
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Bhavesh1.png" class="width_120_D width_80_M"/>
+                <img src="assets/Images/Bhavesh1.png" class="width_120_D width_80_M" />
                 <p
                     style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
                     Bhavesh Aggarwal
@@ -501,7 +540,7 @@
                 <img src="assets/Images/tampa.png" />
             </div>
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Bhavesh2.png" class="width_120_D width_80_M"/>
+                <img src="assets/Images/Bhavesh2.png" class="width_120_D width_80_M" />
                 <p
                     style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
                     Bhavesh Aggarwal
@@ -509,7 +548,7 @@
                 <img src="assets/Images/TwinTrick.png" />
             </div>
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Bhavesh3.png" class="width_120_D width_80_M"/>
+                <img src="assets/Images/Bhavesh3.png" class="width_120_D width_80_M" />
                 <p
                     style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
                     Bhavesh Aggarwal
@@ -541,40 +580,48 @@
                 </button>
             </div>
             <div class="mobile_w_100 desk_50_per">
-                <img src="assets/Images/growth.png" />
+                <img src="assets/Images/growth.png" class="mobile_Image_m_l" />
             </div>
         </div>
     </section>
 
     <section>
         <div style=" background: #000000;">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="display: flex; flex-direction: column; align-items: center;">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
                         <h3
                             style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 35px; line-height: 85%; text-align: center; color: #FFFFFF; padding-top: 30px; padding-bottom: 30px;">
                             AR Technology
                         </h3>
-                        <img src="assets/Images/slider_1_1.png" style="height: 515px;" />
+                        <img src="assets/Images/slider_1_1.png" class="d-block w-100" />
                     </div>
-                    <div class="swiper-slide" style="display: flex; flex-direction: column; align-items: center;">
-                        <h3
+                  </div>
+                  <div class="carousel-item">
+                    <h3
                             style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 35px; line-height: 85%; text-align: center; color: #FFFFFF; padding-top: 30px; padding-bottom: 30px;">
                             AR Technology
                         </h3>
-                        <img src="assets/Images/slider_1_2.png" style="height: 515px;" />
-                    </div>
-                    <div class="swiper-slide" style="display: flex; flex-direction: column; align-items: center;">
-                        <h3
+                        <img src="assets/Images/slider_1_2.png" class="d-block w-100" />
+                  </div>
+                  <div class="carousel-item">
+                    <h3
                             style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 35px; line-height: 85%; text-align: center; color: #FFFFFF; padding-top: 30px; padding-bottom: 30px;">
                             AR Technology
                         </h3>
-                        <img src="assets/Images/slider_1_3.png" style="height: 515px;" />
-                    </div>
+                        <img src="assets/Images/slider_1_3.png" class="d-block w-100"/>
+                  </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             <p
                 style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 85%; text-align: center; color: #FFFFFF; padding: 30px 0;">
                 Incubating 12 Startups
@@ -583,8 +630,7 @@
     </section>
 
     <section style="background: #F3F3F3; margin-top: 10px; margin-bottom: 10px; padding :120px 0;">
-        <div class="row_flex_D iconinc_companies_D"
-            style="align-items: center; justify-content: space-evenly; ">
+        <div class="row_flex_D iconinc_companies_D" style="align-items: center; justify-content: space-evenly; ">
             <div>
                 <p class="mobile_text_center"
                     style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 22px; line-height: 85%; text-transform: uppercase; color: #EB4BA8;">
@@ -605,9 +651,9 @@
                     Learn More
                 </button>
             </div>
-            <div class="row_flex_D align_center_M col_flex_M" style="align-items: center; justify-content: center; margin-top: 20px;">
-                <div class="flex_col_end_JiC col_flex_M space_between_M align_center_M"
-                    style="margin-right: 20px;">
+            <div class="row_flex_D align_center_M col_flex_M"
+                style="align-items: center; justify-content: center; margin-top: 20px;">
+                <div class="flex_col_end_JiC col_flex_M space_center_M align_center_M" style="margin-right: 20px;">
                     <img src="assets/Images/IndraNooyi.png" />
                     <img src="assets/Images/AmbaniJi.png" style="margin-top: 20px;" />
                 </div>
@@ -715,19 +761,23 @@
             <div class="row_flex_D" style="justify-content: space-around; padding: 20px 0;">
                 <div class="grid_3_2_M">
                     <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Terms &nbsp; &nbsp; |</a>
+                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Terms
+                        &nbsp; &nbsp; |</a>
                     <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Privacy &nbsp; &nbsp; |</a>
+                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Privacy
+                        &nbsp; &nbsp; |</a>
                     <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Disclosures &nbsp; &nbsp; &nbsp;|</a>
+                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Disclosures
+                        &nbsp; &nbsp; &nbsp;|</a>
                     <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Sitemap &nbsp; &nbsp; &nbsp;|</a>
+                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Sitemap
+                        &nbsp; &nbsp; &nbsp;|</a>
                     <a
                         style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">©
                         AL Advisors Management Inc.</a>
                 </div>
 
-                <hr class="mobile_only"/>
+                <hr class="mobile_only_hr" />
 
                 <div>
                     <img src="assets/Images/linkedin.png" style="margin: 0 14px;" />
@@ -759,6 +809,11 @@
         });
     </script>
 
+    <script>
+        $("#btn-menu").click(function () {
+            $(".mobile_menu").toggle();
+        })
+    </script>
 </body>
 
 </html>

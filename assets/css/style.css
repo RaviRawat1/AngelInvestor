@@ -1,9 +1,3 @@
-body {
-    background-image: url(/assets/Images/bgImage3.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: 100% auto !important;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -33,13 +27,6 @@ h6 {
     src: url(/assets/fonts/Inter-VariableFont.ttf);
 }
 
-.headerMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px 80px;
-}
-
 .row-gap {
     display: flex;
     flex-direction: row;
@@ -57,7 +44,7 @@ h6 {
         display: none;
     }
 
-    .mobile_only {
+    .mobile_only_hr {
         width: 100%;
         margin: 20px 0;
         color: #E7E7E7;
@@ -77,6 +64,10 @@ h6 {
 
     .margin_10_per_M {
         margin-top: 10%;
+    }
+
+    .margin_8_per_M {
+        margin-top: 2%;
     }
 
     .mobile_center {
@@ -115,7 +106,7 @@ h6 {
     .grid_2_2_M {
         display: grid;
         grid-template-columns: auto auto;
-        /* gap: 20px; */
+        gap: 20px;
         margin-top: 50px;
     }
 
@@ -133,11 +124,16 @@ h6 {
         margin-top: 50px;
     }
 
-    .space_between_M {
+    .space_center_M {
         justify-content: center;
     }
 
-    .align_center_M{
+    .space_between_M {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .align_center_M {
         align-items: center;
     }
 
@@ -150,7 +146,68 @@ h6 {
         width: 80%;
     }
 
+    body {
+        background-image: url(/assets/Images/bg_51_M.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% 9% !important;
+    }
 
+    .text_C_SC_font_83_pink_M {
+        font-family: 'Cormorant SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 85%;
+        text-align: center;
+        color: #FFB7E3;
+    }
+
+    .mobile_menu_orderList {
+        list-style-type: none;
+        height: 20px;
+        position: absolute;
+        right: 18px;
+        top: 60px;
+        float: left;
+    }
+
+    .margin_top_mobile {
+        margin-top: 78%;
+    }
+
+    .headerMenu_M {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 20px;
+    }
+
+
+
+    .mobile_menu_orderList li {
+        background-color: #fff;
+        padding: 15px;
+        width: 43%;
+        text-align: center;
+        float: right;
+        border-bottom: 1px solid #000;
+        border-radius: 3px;
+    }
+    .mobile_menu_orderList li:hover{
+        background-color: #40b6e5;
+        color: #fff;
+        border: 1px solid #fff;
+    }
+
+    .mobile_menu_orderList li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        top: 92px !important;
+    }
 }
 
 @media screen and (min-width:451px) {
@@ -160,6 +217,10 @@ h6 {
 
     .margin_10_per_D {
         margin-top: 10%;
+    }
+
+    .margin_20_per_D {
+        margin-top: 20%;
     }
 
     .row_flex_D {
@@ -206,7 +267,7 @@ h6 {
         background-size: 70% auto;
     }
 
-    .mobile_only {
+    .mobile_only_none {
         display: none;
     }
 
@@ -216,13 +277,43 @@ h6 {
         align-items: flex-end;
         justify-content: center;
     }
+
+    body {
+        background-image: url(/assets/Images/bgImage3.png) !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% auto !important;
+    }
+
+    .text_C_SC_font_83_pink_D {
+        font-family: 'Cormorant SC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 83px;
+        line-height: 85%;
+        text-align: center;
+        color: #FFB7E3;
+    }
+
+    .headerMenu_D {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px 80px;
+    }
+
+    .justify_center_D {
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .investor_portfolio_container_D {
     align-items: center;
 }
 
-
+.mobile_menu_container {
+    display: none;
+}
 
 /* Slider */
 
@@ -296,6 +387,14 @@ h6 {
 .swiper-slide:nth-child(3n) {
     width: 70%;
 }
+
+
+
+
+
+
+
+
 
 /* Swiper */
 
