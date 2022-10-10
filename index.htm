@@ -2,818 +2,340 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/style2.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/animation.css" />
+    <link rel="stylesheet" href="assets/css/plugins/feature.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnify.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/plugins/lightbox.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 
-    <!-- Stylesheets -->
-    <!-- <link rel="stylesheet" href="assets/css/docs.theme.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <!-- Owl Stylesheets -->
-    <link rel="stylesheet" href="assets/js/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/js/owlcarousel/assets/owl.theme.default.min.css">
-
-    <!-- javascript -->
-    <script src="assets/js/vendors/jquery.min.js"></script>
-    <script src="assets/js/owlcarousel/owl.carousel.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <title>Document</title>
-
 </head>
 
 <body>
-    <!-- Header -->
-    <!-- <div class="mobile_only background_img"></div> -->
-    <section class="headerMenu_D">
-        <div class="flex_row_M space_between_M headerMenu_M">
-            <a href="javascript:void(0)" class="mobile_only_none"><img src="assets/Images/chat_icon.png" /></a>
-            <a href="javascript:void(0)"><img src="assets/Images/logo.png" /></a>
-            <button id="btn-menu" class="mobile_only_none">
-                <img src="assets/Images/menu_Icon.png" />
-            </button>
+    <!-- <section class="headerMenu_D"> -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between px-5 upperSection_bg">
+        <a class="navbar-brand logo_text" href="#">
+            <img src="assets/Images/logo_3.png" width="30" height="30" class="d-inline-block align-top" alt="logo" />
+            AngelEye
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto menu_ul">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> [ Investors ] </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Founders </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Partners </a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="customButton">Let’s Talk</button>
+                </li>
+            </ul>
         </div>
-        <div class="row-gap desktop-only" style="margin-top: 10px;">
-            <a href="javascript:void(0)"
-                style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none; margin-top: 10px;">
-                Home</a>
-            <a href="javascript:void(0)"
-                style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none; margin-top: 10px;">
-                For Investors</a>
-            <a href="javascript:void(0)"
-                style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none; margin-top: 10px;">
-                For Founders</a>
-            <a href="javascript:void(0)"
-                style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none; margin-top: 10px;">
-                Resources</a>
-            <a href="javascript:void(0)"
-                style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none; margin-top: 10px;">
-                Company</a>
-            <button
-                style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; width: 128px; background: #FFFFFF; border-radius: 5px;height: 36px; color: #4D21E5;;">
-                Let's Talk</button>
+    </nav>
 
-            </div>
-            <div class="mobile_only mobile_menu mobile_menu_container">
-                <ol class="mobile_menu_orderList">
-                    <li>
-                     <a href="javascript:void(0)"> Home </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">For Investors </a>
-                    </li>
-                    
-                    <li>
-                        <a href="javascript:void(0)">For Founders</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Resources</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">Company</a>
-                    </li>
-                </ol>
-            </div>
-
-
-    </section>
-
-
-
-    <!-- <header class="header">
-        <a href="javascript:void(0)"><img src="assets/Images/logo.png" /></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="javascript:void(0)"
-            style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none;">
-            Home</a></li>
-          <li><a href="javascript:void(0)"
-            style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none;">
-            For Investors</a></li>
-          <li><a href="javascript:void(0)"
-            style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none;">
-            For Founders</a></li>
-          <li><a href="javascript:void(0)"
-            style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none;">
-            Resources</a></li>
-            <li><a href="javascript:void(0)"
-                style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; text-decoration: none;">
-                Company</a></li>
-            <li><button
-                style="font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; width: 128px; background: #FFFFFF; border-radius: 5px;height: 36px; color: #4D21E5;;">
-                Let's Talk</button></li>
-        </ul>
-      </header> -->
-
-    <section class="margin_10_per_D margin_8_per_M">
-        <h3 class="text_C_SC_font_83_pink_D text_C_SC_font_83_pink_M">
-            Invest in <br> World-changing Startups
-        </h3>
-        <p
-            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 145.5%; text-align: center; color: #FFFFFF; margin-top: 30px;">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-            atque <br> corrupti quos dolores et quas molestias excepturi sint
-        </p>
-    </section>
-    <!-- </div> -->
-
-    <section class="margin_top_mobile margin_20_per_D">
-        <div class="row_flex_D col_flex_M we_turn_investment_D">
-            <div class="mobile_w_100 desk_50_per">
-                <img src="assets/Images/img_1.png" class="mobile_Image" />
-            </div>
-            <div class="mobile_padding  mobile_w_100 desk_50_per">
-                <p class="mobile_text_center"
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 22px; line-height: 85%; text-transform: uppercase; color: #EB4BA8;">
-                    we turn
-                </p>
-                <h6 class="mobile_text_center"
-                    style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; line-height: 85%; font-size: 63px; color: #190F32; margin-top: 15px;">
-                    potential into<br> performance
-                </h6>
-                <p class="mobile_text_center"
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 145.5%; color: #000000; margin-top: 15px;">
-                    We invest far and wide, across sectors and geographies, including 51 <br> companies valued at $1B+
-                    and 140+ companies valued at more than <br> $100 million².
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section style="margin-top: 80px;">
-        <p
-            style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 22px; line-height: 85%; text-align: center; text-transform: uppercase; color: #EB4BA8;">
-            OUR
-        </p>
-        <h5
-            style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 79px; line-height: 85%; text-align: center; color: #130B1E; margin-top: 15px;">
-            Investment Portfolio
-        </h5>
-        <p
-            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 145.5%; text-align: center; color: #000000; margin-top: 15px;">
-            We have invested in more than 2,600+ startups worldwide. Here are <br> a few who have exceeded all
-            expectations².
-        </p>
-    </section>
-
-    <section style="margin-top: 20px;">
-        <section id="demos">
-            <div class="row">
-                <div class="large-12 columns">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <div class="row_flex_D investor_portfolio_container_D investor_portfolio_container_M">
-                                <img src="/assets/Images/img_2.png" class="width_40_D"
-                                    style="width: 422.96px; height: 319px;" />
-                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_center_M">
-                                    <div>
-                                        <img src="/assets/Images/img_3.png" class="responsive_image"
-                                            style="width: 130px; height: 62px;" />
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 28px; line-height: 100%; color: #000000;">
-                                            Ramanarjun Desai
-                                        </h6>
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 145.5%; color: #000000;">
-                                            Founder, Brex fintech Co.
-                                        </p>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FFFFFF; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_4.png" style="width: 37px; height: 37px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                                            Founded
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                                            2018
-                                        </h6>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FDE2ED; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_5.png" style="width: 37px; height: 37px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                                            Capital
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                                            $2m
-                                        </h6>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #160D2B; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_6.png" style="width: 55px; height: 55px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #FFFFFF;">
-                                            Valuation
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #FFFFFF;">
-                                            $135m
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row_flex_D investor_portfolio_container_D investor_portfolio_container_M">
-                                <img src="/assets/Images/img_2.png" class="width_40_D"
-                                    style="width: 422.96px; height: 319px;" />
-                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_center_M">
-                                    <div>
-                                        <img src="/assets/Images/img_3.png" class="responsive_image"
-                                            style="width: 130px; height: 62px;" />
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 28px; line-height: 100%; color: #000000;">
-                                            Ramanarjun Desai
-                                        </h6>
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 145.5%; color: #000000;">
-                                            Founder, Brex fintech Co.
-                                        </p>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FFFFFF; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_4.png" style="width: 37px; height: 37px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                                            Founded
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                                            2018
-                                        </h6>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FDE2ED; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_5.png" style="width: 37px; height: 37px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                                            Capital
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                                            $2m
-                                        </h6>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #160D2B; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_6.png" style="width: 55px; height: 55px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #FFFFFF;">
-                                            Valuation
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #FFFFFF;">
-                                            $135m
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row_flex_D investor_portfolio_container_D investor_portfolio_container_M">
-                                <img src="/assets/Images/img_2.png" class="width_40_D"
-                                    style="width: 422.96px; height: 319px;" />
-                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_center_M">
-                                    <div>
-                                        <img src="/assets/Images/img_3.png" class="responsive_image"
-                                            style="width: 130px; height: 62px;" />
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 28px; line-height: 100%; color: #000000;">
-                                            Ramanarjun Desai
-                                        </h6>
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 145.5%; color: #000000;">
-                                            Founder, Brex fintech Co.
-                                        </p>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FFFFFF; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_4.png" style="width: 37px; height: 37px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                                            Founded
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                                            2018
-                                        </h6>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FDE2ED; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_5.png" style="width: 37px; height: 37px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                                            Capital
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                                            $2m
-                                        </h6>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #160D2B; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_6.png" style="width: 55px; height: 55px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #FFFFFF;">
-                                            Valuation
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #FFFFFF;">
-                                            $135m
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="row_flex_D investor_portfolio_container_D investor_portfolio_container_M">
-                                <img src="/assets/Images/img_2.png" class="width_40_D"
-                                    style="width: 422.96px; height: 319px;" />
-                                <div class="grid_2_2_M row_flex_D space_evenly_D width_60_D space_center_M">
-                                    <div>
-                                        <img src="/assets/Images/img_3.png" class="responsive_image"
-                                            style="width: 130px; height: 62px;" />
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 28px; line-height: 100%; color: #000000;">
-                                            Ramanarjun Desai
-                                        </h6>
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 145.5%; color: #000000;">
-                                            Founder, Brex fintech Co.
-                                        </p>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FFFFFF; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_4.png" style="width: 37px; height: 37px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                                            Founded
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                                            2018
-                                        </h6>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FDE2ED; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_5.png" style="width: 37px; height: 37px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                                            Capital
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                                            $2m
-                                        </h6>
-                                    </div>
-                                    <div
-                                        style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #160D2B; border-radius: 15px 15px 0px 15px;">
-                                        <img src="assets/Images/img_6.png" style="width: 55px; height: 55px;" />
-                                        <p
-                                            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #FFFFFF;">
-                                            Valuation
-                                        </p>
-                                        <h6
-                                            style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #FFFFFF;">
-                                            $135m
-                                        </h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <script>
-                        $(document).ready(function () {
-                            var owl = $('.owl-carousel');
-                            owl.owlCarousel({
-                                margin: 10,
-                                nav: true,
-                                loop: true,
-                                responsive: {
-                                    0: {
-                                        items: 1
-                                    },
-                                    600: {
-                                        items: 1
-                                    },
-                                    1000: {
-                                        items: 1
-                                    }
-                                }
-                            })
-                        })
-                    </script>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- <div class="row_flex" style="align-items: center; justify-content: space-around; margin: 0 70px;">
-            <img src="/assets/Images/img_2.png" />
-            <div style="">
-                <img src="/assets/Images/img_3.png" />
-                <h6
-                    style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 28px; line-height: 100%; color: #000000;">
-                    Ramanarjun Desai
-                </h6>
-                <p
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 15px; line-height: 145.5%; color: #000000;">
-                    Founder, Brex fintech Co.
-                </p>
-            </div>
-            <div
-                style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FFFFFF; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                <img src="assets/Images/img_4.png" />
-                <p
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                    Founded
-                </p>
-                <h6
-                    style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                    2018
-                </h6>
-            </div>
-            <div
-                style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #FDE2ED; border: 1px solid #EEEEEE; border-radius: 15px 15px 0px 15px;">
-                <img src="assets/Images/img_5.png" />
-                <p
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #000000;">
-                    Capital
-                </p>
-                <h6
-                    style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #000000;">
-                    $2m
-                </h6>
-            </div>
-            <div
-                style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 174px; height: 164px; background-color: #160D2B; border-radius: 15px 15px 0px 15px;">
-                <img src="assets/Images/img_6.png" />
-                <p
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 16px; line-height: 145.5%; text-align: center; color: #FFFFFF;">
-                    Valuation
-                </p>
-                <h6
-                    style="font-family: 'NanumMyeongjo'; font-style: normal; font-weight: 700; font-size: 40px; line-height: 100%; text-align: center; color: #FFFFFF;">
-                    $135m
-                </h6>
-            </div>
-        </div> -->
-    </section>
-
-    <section
-        style="background: #160D2B; margin-top: 70px; width: 100%; min-height: 558px; max-height: 1200px; padding-bottom: 20px;">
-        <div class="row_flex_D we_turn_investment_D" style="padding-top: 4%;">
-            <div class="mobile_w_100 desk_50_per">
-                <img src="assets/Images/img_7.png" class="mobile_Image_m_l" />
-            </div>
-            <div class="mobile_center mobile_w_100 desk_50_per">
-                <h5 class="mobile_text_center"
-                    style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 79px; line-height: 85%; color: #FFFFFF;">
-                    Join as Investor
-                </h5>
-                <p class="mobile_text_center"
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 145.5%; color: #FFFFFF; margin: 45px 0px;">
-                    We’re giving more people the opportunity to participate in the<br> venture economy and more startups
-                    the resources they need to<br> change the world.
-                </p>
-                <div class="flex_row_M space_center_M">
-                    <button
-                        style="width: 150px; height: 37px; box-sizing: border-box; background-color: #160D2B; border: 1px solid #FFFFFF; border-radius: 5px; font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; margin-right: 30px;">
-                        Learn More
-                    </button>
-                    <button
-                        style="width: 150px; height: 37px; box-sizing: border-box; background: #FFFFFF; border-radius: 5px; font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; text-align: center; color: #EA48AC;">
-                        Join to Invest
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section style="margin-top: 50px;">
-        <h4
-            style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 83px; line-height: 85%; text-align: center; color: #190F32;">
-            Fundraise Journey
-        </h4>
-        <p
-            style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 145.5%; text-align: center; color: #000000; margin-top: 25px;">
-            We invest far and wide, across sectors and geographies, including 51 companies valued at $1B+ <br> and 140+
-            companies valued at more than $100 million².
-        </p>
-        <div class="row_flex_D grid_2_2_g10_M" style="margin-top: 30px; justify-content: space-evenly;">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Mustafa.png" class="width_120_D width_80_M" />
-                <p
-                    style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
-                    P C Mustafa
-                </p>
-                <img src="assets/Images/musicBeat.png" />
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Bhavesh.png" class="width_120_D width_80_M" />
-                <p
-                    style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
-                    Bhavesh Aggarwal
-                </p>
-                <img src="assets/Images/gulet.png" />
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Bhavesh1.png" class="width_120_D width_80_M" />
-                <p
-                    style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
-                    Bhavesh Aggarwal
-                </p>
-                <img src="assets/Images/tampa.png" />
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Bhavesh2.png" class="width_120_D width_80_M" />
-                <p
-                    style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
-                    Bhavesh Aggarwal
-                </p>
-                <img src="assets/Images/TwinTrick.png" />
-            </div>
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="assets/Images/Bhavesh3.png" class="width_120_D width_80_M" />
-                <p
-                    style=" font-family: 'Inter'; font-style: normal; font-weight: 400; margin: 10px 0; font-size: 16px; line-height: 85%; text-align: center; color: #040404;">
-                    Bhavesh Aggarwal
-                </p>
-                <img src="assets/Images/musicBeat.png" />
-            </div>
-        </div>
-    </section>
-
-    <section style="margin-top: 50px;">
-        <div class="row_flex_D col_flex_M we_turn_investment_D">
-            <div class="mobile_w_100 desk_50_per" style="align-items: flex-end;">
-                <h5 class="mobile_text_center"
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 22px; line-height: 110%;">
-                    Are you a
-                </h5>
-                <h3 class="mobile_text_center"
-                    style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 79px; line-height: 85%; color: #190F31; margin: 10px 0px;">
-                    start-up?
-                </h3>
-                <p class="mobile_text_center"
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 145.5%; color: #303030;">
-                    Fundraise in STEALTH with your curated list of investors & access value-<br>added capital. Bring all
-                    investors as a single entity in your cap table.
-                </p>
-                <button class="margin_28_t_per_M"
-                    style="background: #190F31; border-radius: 5px; margin-top: 25px; font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #FFFFFF; width: 195px; height: 37px;">
-                    Join to Raise Funds
-                </button>
-            </div>
-            <div class="mobile_w_100 desk_50_per">
-                <img src="assets/Images/growth.png" class="mobile_Image_m_l" />
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div style=" background: #000000;">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div style="display: flex; flex-direction: column; align-items: center;">
-                        <h3
-                            style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 35px; line-height: 85%; text-align: center; color: #FFFFFF; padding-top: 30px; padding-bottom: 30px;">
-                            AR Technology
-                        </h3>
-                        <img src="assets/Images/slider_1_1.png" class="d-block w-100" />
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <h3
-                            style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 35px; line-height: 85%; text-align: center; color: #FFFFFF; padding-top: 30px; padding-bottom: 30px;">
-                            AR Technology
-                        </h3>
-                        <img src="assets/Images/slider_1_2.png" class="d-block w-100" />
-                  </div>
-                  <div class="carousel-item">
-                    <h3
-                            style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 35px; line-height: 85%; text-align: center; color: #FFFFFF; padding-top: 30px; padding-bottom: 30px;">
-                            AR Technology
-                        </h3>
-                        <img src="assets/Images/slider_1_3.png" class="d-block w-100"/>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-            <p
-                style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 85%; text-align: center; color: #FFFFFF; padding: 30px 0;">
-                Incubating 12 Startups
-            </p>
-        </div>
-    </section>
-
-    <section style="background: #F3F3F3; margin-top: 10px; margin-bottom: 10px; padding :120px 0;">
-        <div class="row_flex_D iconinc_companies_D" style="align-items: center; justify-content: space-evenly; ">
-            <div>
-                <p class="mobile_text_center"
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 22px; line-height: 85%; text-transform: uppercase; color: #EB4BA8;">
-                    Backed by
-                </p>
-                <h6 class="mobile_text_center"
-                    style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 69px; line-height: 85%; color: #130B1E;">
-                    Vissionaries<br> from iconinc <br> companies
-                </h6>
-                <p class="mobile_text_center"
-                    style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 145.5%; color: #303030; margin: 20px ;">
-                    At vero eos et accusamus et iusto odio dignis simos<br> ducimus qui blan ditiis praes entium volup
-                    tatum
-                    dele<br> niti atque corrupti quos dolores et quas moles tias<br> excepturi sint
-                </p>
-                <button class="margin_28_t_per_M"
-                    style="width: 142px; height: 37px; background: #FFFFFF; border-radius: 0px 80px 80px 0px; border: 1px solid #4D21E5; border-radius: 5px; font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; color: #4D21E5;">
-                    Learn More
-                </button>
-            </div>
-            <div class="row_flex_D align_center_M col_flex_M"
-                style="align-items: center; justify-content: center; margin-top: 20px;">
-                <div class="flex_col_end_JiC col_flex_M space_center_M align_center_M" style="margin-right: 20px;">
-                    <img src="assets/Images/IndraNooyi.png" />
-                    <img src="assets/Images/AmbaniJi.png" style="margin-top: 20px;" />
-                </div>
-                <img src="assets/Images/RatanTata.png" class="margin_10_per_M" height="309px" width="263px" />
-            </div>
-        </div>
-    </section>
-
-    <section class="desktop-only"
-        style="background-image: url(/assets/Images/bg_2.png); background-repeat: no-repeat; background-size: 100% auto; height: 445px; padding-top: 60px; ">
-        <div
-            style="display: flex; flex-direction: column; margin: auto; background: linear-gradient(125.01deg, #FFFFFF 22.21%, #F3F3F3 82.58%); border-radius: 15px; width: 798px; height: 285px; margin-top: 3%; margin-left: 12%;">
-            <h5
-                style="font-family: 'Cormorant SC'; font-style: normal; font-weight: 400; font-size: 79px; line-height: 85%; color: #130B1E; text-align: center; margin-top: 45px;">
-                Stay up to date
+    <section class="section_2">
+        <div class="section_2_1">
+            <h5 class="investing_heading">
+                Investing in<br />
+                ESG Impact Start-ups
             </h5>
-            <p
-                style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 145.5%; text-align: center; color: #303030; margin-top: 20px;">
-                At vero eos et accusamus et iusto odio dignis simos ducimus qui blan<br> ditiis praes entium volup tatum
-                dele.
-            </p>
-            <div style="margin: auto; display: flex; flex-direction: row; width: 100%; justify-content: center;">
-                <input type="text" placeholder="Enter Your Email"
-                    style="height: 45px; width: 50%; margin-right: 10px; padding: 0px 10px; border-radius: 5px;" />
-                <button
-                    style=" width: 30%; background: #6635E6; border-radius: 5px; font-family: 'Inter'; font-style: normal; font-weight: 500; font-size: 14px; line-height: 145.5%; text-align: center; color: #FFFFFF;">
-                    Subscibe Now
-                </button>
+            <p class="investing_text">Enabling ESG Impact Journeys for Start Ups</p>
+        </div>
+        <button id="vertical_btn">
+            <p>Fundraise</p>
+        </button>
+        <button id="vertical_btn_2">
+            <p>Invest</p>
+        </button>
+    </section>
+
+    <section class="section_3">
+        <div class="section_3_1">
+            <img src="assets/Images/section_3_12.png" />
+        </div>
+        <div class="section_3_2">
+            <h4>AngelEye Offering</h4>
+            <h5>
+                Bridging Start-ups, Entrepreneurs, Founders with ESG Impact Investors
+            </h5>
+            <h6>Mentor- Partner-FundRaise - Collaborate</h6>
+        </div>
+    </section>
+
+    <section class="section_4">
+        <div class="section_4_1 px-auto">
+            <h4>Our Investors are</h4>
+            <div class="section_4_1_2 mt-5">
+                <div class="section_4_1_2_1">Professional</div>
+                <div class="section_4_1_2_2">HNIs</div>
+                <div class="section_4_1_2_3">Family Office</div>
+                <div class="section_4_1_2_4">Institutions</div>
+                <div class="section_4_1_2_5">Corporates</div>
+            </div>
+        </div>
+        <!-- <div> -->
+        <img class="section_4_2_img_1" src="assets/Images/areYouInvestor.png" />
+        <img class="section_4_2_img_2" src="assets/Images/areYouFounder.png" />
+        <!-- </div> -->
+    </section>
+
+    <section>
+        <div class="section_founders">
+            <h4>Some of our Founders</h4>
+            <div class="section_founders_container">
+                <div class="section_founder_detail">
+                    <h5>Suparna Dua</h5>
+                    <p>Achieving Women Equity</p>
+                    <img src="assets/Images/SuparnaDua.png" alt="Suparna Dua" class="founder_image" />
+                </div>
+                <div class="section_founder_detail">
+                    <h5>Bindi Dharia</h5>
+                    <p>Vall Impact Ventures, SDG</p>
+                    <img src="assets/Images/BindiDharia.png" alt="Bindi Dharia" class="founder_image" />
+                </div>
+                <div class="section_founder_detail">
+                    <h5>Natasha</h5>
+                    <p>Founder, Brex fintech Co.</p>
+                    <img src="assets/Images/Natasha.png" alt="Natasha" class="founder_image" />
+                </div>
+                <div class="section_founder_detail">
+                    <h5>Ritu Mehrotra</h5>
+                    <p>Founder, UnitedWeCare</p>
+                    <img src="assets/Images/RituMehrotra.png" alt="Ritu Mehrotra" class="founder_image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_5">
+        <div class="container-fluid">
+            <div class="section_5_1">
+                <h5>AngelEye Fundraise Journey</h5>
+            </div>
+            <div class="section_5_2">
+                <img src="assets/Images/timeline.png" width="100%" />
+            </div>
+            <div class="section_5_3">
+                <h6>Join to raise funds</h6>
+                <button></button>
             </div>
         </div>
     </section>
 
     <section>
-        <footer>
-            <div class="row_flex_D grid_2_2_M" style="justify-content: space-evenly; margin-top: 50px;">
-                <div>
-                    <h2
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 20px; line-height: 145.5%; color: #000000; padding-left: 0;">
-                        Get started
-                    </h2>
-                    <ul
-                        style="list-style-type: none; font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; padding-left: 0; color: #000000;">
-                        <li><a>Log in</a></li>
-                        <li><a>Sign up</a></li>
-                        <li><a>Help</a></li>
-                    </ul>
+        <div class="section_6_1">
+            <div class="section_6_1_1">
+                <p>Meet the</p>
+                <h4>AngelEye Advisors</h4>
+            </div>
+            <!-- <div class="section_6_2"> -->
+            <div class="section_6_2_1">
+                <div class="section_6_2_1_1">
+                    <div>
+                        <img src="assets/Images/MohitThukral.png">
+                    </div>
+                    <h5>Mohit Thukral</h5>
+                    <p>
+                        Founder & Managing Partner Vivtera / Board Member Arise Founder & Trustee Plaksha/
+                    </p>
                 </div>
-                <div>
-                    <h2
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 20px; line-height: 145.5%; color: #000000; padding-left: 0;">
-                        For Investors
-                    </h2>
-                    <ul
-                        style="list-style-type: none; font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; padding-left: 0; color: #000000;">
-                        <li><a>Rolling Funds™</a></li>
-                        <li><a>Managed Funds</a></li>
-                        <li><a>Syndicates</a></li>
-                        <li><a>Rolling Funds Fees Breakdown</a></li>
-                    </ul>
+                <div class="section_6_2_1_1">
+                    <div>
+                        <img src="assets/Images/AshishKashyap.png">
+                    </div>
+                    <h5>Ashish Kashyap</h5>
+                    <p>
+                        Founder, IND Money
+                    </p>
                 </div>
-                <div>
-                    <h2
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 20px; line-height: 145.5%; color: #000000; padding-left: 0;">
-                        For Fund Managers
-                    </h2>
-                    <ul
-                        style="list-style-type: none; font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; padding-left: 0; color: #000000;">
-                        <li><a>Rolling Funds™</a></li>
-                        <li><a>Venture Funds</a></li>
-                        <li><a>Syndicates</a></li>
-                        <li><a>Pricing</a></li>
-                        <li><a>Rolling Fund Fees Calculator</a></li>
-                        <li><a>Traditional Fund Fees Calculator</a></li>
-                        <li><a>VC Fund Performance Calculator</a></li>
-                    </ul>
+                <div class="section_6_2_1_1">
+                    <div>
+                        <img src="assets/Images/AnjaliSingh.png">
+                    </div>
+                    <h5>Anjali Singh</h5>
+                    <p>
+                        MD, Deutsche Bank India
+                    </p>
                 </div>
-                <div>
-                    <h2
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 20px; line-height: 145.5%; color: #000000; padding-left: 0;">
-                        For Founders
-                    </h2>
-                    <ul
-                        style="list-style-type: none; font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; padding-left: 0; color: #000000;">
-                        <li><a>Stack Incorporation</a></li>
-                        <li><a>Stack Equity</a></li>
-                        <li><a>Stack Equity Pricing</a></li>
-                        <li><a>Roll Up Vehicles</a></li>
-                        <li><a>Roll Up Vehicle Cost Comparison</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h2
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 20px; line-height: 145.5%; color: #000000; padding-left: 0;">
-                        Company
-                    </h2>
-                    <ul
-                        style="list-style-type: none; font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; padding-left: 0; color: #000000;">
-                        <li><a>About Us</a></li>
-                        <li><a>Careers</a></li>
-                        <li><a>Blog</a></li>
-                    </ul>
+                <div class="section_6_2_1_1">
+                    <div>
+                        <img src="assets/Images/ShaliniSarin.png">
+                    </div>
+                    <h5>Shalini Sarin</h5>
+                    <p>
+                        Founder, IND Money
+                    </p>
                 </div>
             </div>
-            <hr width="100%" color="#E7E7E7" style="margin-top: 50px;" />
-            <div class="row_flex_D" style="justify-content: space-around; padding: 20px 0;">
-                <div class="grid_3_2_M">
-                    <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Terms
-                        &nbsp; &nbsp; |</a>
-                    <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Privacy
-                        &nbsp; &nbsp; |</a>
-                    <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Disclosures
-                        &nbsp; &nbsp; &nbsp;|</a>
-                    <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">Sitemap
-                        &nbsp; &nbsp; &nbsp;|</a>
-                    <a
-                        style="font-family: 'Inter'; font-style: normal; font-weight: 400; font-size: 14px; line-height: 214.5%; color: #000000;">©
-                        AL Advisors Management Inc.</a>
-                </div>
-
-                <hr class="mobile_only_hr" />
-
-                <div>
-                    <img src="assets/Images/linkedin.png" style="margin: 0 14px;" />
-                    <img src="assets/Images/instagram.png" style="margin: 0 14px;" />
-                    <img src="assets/Images/facebook.png" style="margin: 0 14px;" />
-                </div>
-            </div>
-        </footer>
+            <!-- </div> -->
+        </div>
     </section>
 
+    <section>
+        <div class="main-content">
+            <div class="rainbow-blog-area rainbow-section-gap">
+                <div class="container-fluid">
+                    <div class="row mt_dec--30">
+                        <h5 class="blogs_heading">Blogs</h5>
+                        <div class="col-lg-12">
+                            <div class="row row--15">
+                                <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700"
+                                    data-sal-delay="300">
+                                    <div class="rainbow-card box-card-style-default">
+                                        <div class="inner">
+                                            <div class="thumbnail">
+                                                <a class="image" href="blog-details.html"><img class="w-100"
+                                                        src="assets/images/blog_1.webp" alt="Blog Image" /></a>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="rainbow-meta-list">
+                                                    <li><a href="#">Jannin</a></li>
+                                                    <li class="separator">/</li>
+                                                    <li>25 Aug 2021</li>
+                                                </ul>
+                                                <h4 class="title">
+                                                    <a href="blog-details.html">Top 5 Lessons About Corporate To Learn
+                                                        Before.</a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700"
+                                    data-sal-delay="100">
+                                    <div class="rainbow-card box-card-style-default">
+                                        <div class="inner">
+                                            <div class="thumbnail">
+                                                <a class="image" href="blog-details.html"><img class="w-100"
+                                                        src="assets/images/blog_1.webp" alt="Blog Image" /></a>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="rainbow-meta-list">
+                                                    <li><a href="#">Jannin</a></li>
+                                                    <li class="separator">/</li>
+                                                    <li>23 Jul 2021</li>
+                                                </ul>
+                                                <h4 class="title">
+                                                    <a href="blog-details.html">Master The Art Of Corporate With These 5
+                                                        Tips.</a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12 mt--30" data-sal="slide-up" data-sal-duration="700"
+                                    data-sal-delay="200">
+                                    <div class="rainbow-card box-card-style-default">
+                                        <div class="inner">
+                                            <div class="thumbnail">
+                                                <a class="image" href="blog-details.html"><img class="w-100"
+                                                        src="assets/images/blog_1.webp" alt="Blog Image" /></a>
+                                            </div>
+                                            <div class="content">
+                                                <ul class="rainbow-meta-list">
+                                                    <li><a href="#">John Dou</a></li>
+                                                    <li class="separator">/</li>
+                                                    <li>30 Jun 2021</li>
+                                                </ul>
+                                                <h4 class="title">
+                                                    <a href="blog-details.html">Corporate Is Your Worst Enemy. </a>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="container-fluid">
+        <div class="section_refer">
+            <div class="section_refer_1">
+                <img src="assets/Images/refer.png" />
+            </div>
+            <div class="section_refer_2">
+                <h5>Refer a<br> Start-Up</h5>
+                <h6>Join to raise funds</h6>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "auto",
-            centeredSlides: true,
-            loop: true,
-            // spaceBetween: 100,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
+    <footer class="">
+        <div class="section_footer">
+            <div class="section_footer_1 container-fluid col-md-4">
+                <h6>Terms &nbsp; &nbsp; |</h6>
+                <h6>&nbsp; &nbsp;Privacy &nbsp; &nbsp; |</h6>
+                <h6>&nbsp; &nbsp; © Angel-Eye, 2022</h6>
+            </div>
+            <div class="section_footer_2 col-md-8">
+                <h6>Contact Us &nbsp; &nbsp;|</h6>
+                <h6>&nbsp; &nbsp;About Us &nbsp; &nbsp; |</h6>
+                <h6>&nbsp; &nbsp; Careers &nbsp; &nbsp; |</h6>
+                <h6>&nbsp; &nbsp; Investors &nbsp; &nbsp; |</h6>
+                <h6>&nbsp; &nbsp;Founders &nbsp; &nbsp; </h6>
+                <a>&nbsp; &nbsp; &nbsp; &nbsp;<img src="assets/Images/instagram.png" /></a>
+            </div>
+        </div>
+    </footer>
 
-    <script>
-        $("#btn-menu").click(function () {
-            $(".mobile_menu").toggle();
-        })
-    </script>
+    <!-- <script src="assets/js/vendor/modernizr.min.js"></script> -->
+    <!-- <script src="assets/js/vendor/jquery.min.js"></script> -->
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/vendor/popper.min.js"></> -->
+    <!-- <script src="assets/js/vendor/waypoint.min.js"></script> -->
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/counterup.min.js"></script>
+    <!-- <script src="assets/js/vendor/feather.min.js"></script> -->
+    <script src="assets/js/vendor/sal.min.js"></script>
+    <script src="assets/js/vendor/masonry.js"></script>
+    <script src="assets/js/vendor/imageloaded.js"></script>
+    <script src="assets/js/vendor/magnify.min.js"></script>
+    <script src="assets/js/vendor/lightbox.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/easypie.js"></script>
+    <script src="assets/js/vendor/text-type.js"></script>
+    <script src="assets/js/vendor/jquery.style.swicher.js"></script>
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
