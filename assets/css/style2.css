@@ -145,6 +145,10 @@ body {
     margin-top: 40px;
 }
 
+.navbar .navbar-toggler .navbar-toggler-icon{
+   background-color: white !important;
+}
+
 .section_3_2 h4 {
     font-family: 'Cormorant SC';
     font-style: normal;
@@ -754,6 +758,8 @@ body {
 
 
 
+
+
 /**********************
 Footer
 **********************/
@@ -797,3 +803,8 @@ Footer
     color: #FFFFFF;
     text-align: right;
 }
+
+/*********************************
+raiseFund Style
+*********************************/
+
