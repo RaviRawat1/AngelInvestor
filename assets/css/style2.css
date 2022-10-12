@@ -149,6 +149,10 @@ body {
    background-color: white !important;
 }
 
+.nav-item {
+    padding: 0px 25px !important;
+}
+
 .section_3_2 h4 {
     font-family: 'Cormorant SC';
     font-style: normal;
