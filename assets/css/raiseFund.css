@@ -156,13 +156,28 @@ ul {
     list-style: none;
 }
 
-.team_founder {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: space-around;
-    justify-items: center;
-    margin-top: 60px;
+@media screen and (min-width:1100px) {
+    .team_founder {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+    .para_wrap {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        width: 80%;
+    }
 }
+
+.team_founder {
+    margin-top: 60px;
+    padding: 0 7%;
+}
+
+
 
 .section_founder_detail {
     padding: 0 30px;
