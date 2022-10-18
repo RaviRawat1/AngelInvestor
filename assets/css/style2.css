@@ -64,6 +64,10 @@
     .desktop_heading_79 {
         font-size: 55px;
     }
+
+    .hide-on-desktop {
+        display: none;
+    }
 }
 
 .logo_text {
@@ -198,9 +202,9 @@
         justify-content: center;
     }
 
-    .section_5_2 img {
+    /* .section_5_2 img {
         height: 40px;
-    }
+    } */
 
     .section_5 {
         padding: 40px 100px 60px;
@@ -208,6 +212,15 @@
 
     .section_5_1 h5 {
         font-size: 35px;
+    }
+
+    .section_4 {
+        /* margin-bottom: 180px; */
+        height: 750px;
+    }
+
+    .exclusive_Deals {
+        margin-top: 37%;
     }
 }
 
@@ -239,6 +252,7 @@
 
     .section_4 {
         margin-bottom: 180px;
+        height: 600px;
     }
 
     .section_5 {
@@ -248,6 +262,11 @@
     .section_5_1 h5 {
         font-size: 55px;
     }
+
+    .rounded {
+        padding-left: 5%;
+    }
+
 
 }
 
@@ -301,7 +320,7 @@
 .section_4 {
     background: #221333;
     border-radius: 80px;
-    height: 600px;
+
     margin-top: 180px;
     position: relative;
     display: flex;
@@ -384,7 +403,8 @@
     display: flex;
     /* flex-direction: row; */
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 0 5%;
 
 }
 
@@ -396,7 +416,7 @@
     height: 60px;
     background: #F3F3F3;
     border-radius: 5px;
-    width: 200px;
+    width: 170px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -412,7 +432,7 @@
     margin-bottom: 90px;
 }
 
-.section_founders h4 {
+.section_founders_heading {
     font-family: 'NanumMyeongjo';
     font-style: normal;
     font-weight: 400;
@@ -420,6 +440,7 @@
     line-height: 100%;
     color: #000000;
     text-align: center;
+    margin-bottom: 35px;
 }
 
 .section_founders_container {
@@ -1158,3 +1179,103 @@ raiseFund Style
     text-align: center;
     color: #000000;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.container {
+    background-color: rgb(232, 242, 245);
+    padding: 50px 40px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 25px #a7a7a7
+}
+
+.tag {
+    text-align: center;
+    font-size: 1.1rem
+}
+
+.fa-heart {
+    color: rgba(255, 230, 0, 0.959);
+    font-size: 30px
+}
+
+.card {
+    height: 320px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: -1px 3px 5px #a7a7a7
+}
+
+.testimonial {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 500
+}
+
+.active-star {
+    color: #FBC02D;
+    margin-bottom: 8px
+}
+
+.active-star:hover {
+    color: #F9A825;
+    cursor: pointer
+}
+
+.profile {
+    padding-top: 10px
+}
+
+.name {
+    font-weight: 700
+}
+
+.designation {
+    font-size: 0.84rem;
+    font-weight: 600
+}
+
+.owl-carousel {
+    margin-bottom: 15px
+}
+
+.owl-carousel .owl-stage-outer {
+    padding: 40px 10px;
+    /* height: 380px */
+}
+
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+
+/* .rounded{
+    padding-left: 5%;
+} */
+
+/* .owl-carousel .owl-item img {
+    width: 45px !important;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover
+} */
+
+.owl-theme .owl-nav [class*='owl-'] {
+    border-radius: 50% !important;
+    background: inherit !important;
+    border: 3px solid #bbb;
+    color: #bbb !important
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    border: 3px solid #A3E074;
+    color: #A3E074 !important;
+}
+
+/* @media(max-width: 575.5px) {
+    .container {
+        margin: 0px;
+        padding: 20px
+    }
+} */
