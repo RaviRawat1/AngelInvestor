@@ -110,7 +110,7 @@
                     <p>Discover and invest in curated ESG Start Ups and build your investment portfolio. </p>
                     <div class="arrow_animation">
                         <p class="my-auto mr-5">Join to Invest</p>
-                        <div class="innerDiv"
+                        <div class="innerDiv" onclick="location.href='becomeAInvestor.htm'"
                             style="height: 39px; width: 39px; border-radius: 39px; background-color: #A3E074;">
                             <img class="arrow_image" src="assets/Images/right_arrow.png" style="" />
                         </div>
@@ -136,7 +136,7 @@
                     <p>Fundraise with investors and access impact capital</p>
                     <div class="arrow_animation">
                         <p class="my-auto mr-5">Join to raise funds</p>
-                        <div class="innerDiv"
+                        <div class="innerDiv" onclick="location.href='raiseFund.htm'"
                             style="height: 39px; width: 39px; border-radius: 39px; background-color: #A3E074;">
                             <img class="arrow_image" src="assets/Images/right_arrow.png" style="" />
                         </div>
@@ -284,15 +284,15 @@
     </section>
 
     <section class="section_5">
-        <div class="">
+        <div class="section_5_">
             <div class="section_5_1">
                 <h5 class="mobile_heading_55 desktop_heading_55">AngelEye Fundraise Journey</h5>
             </div>
             <div class="section_5_2">
-                <img src="assets/Images/timeline.png" class="hide-on-mobile" width="100%" />
-                <img src="assets/Images/journey_mobile_2.png" height="100%" class="hide-on-desktop" />
+                <img src="assets/Images/timeline.png" class="hide-on-mobile mb-5" width="100%" />
+                <img src="assets/Images/journey_mobile_2.png" height="100%" class="hide-on-desktop mb-5" />
             </div>
-            <div class="arrow_animation my-auto">
+            <div class="arrow_animation justify-content-center">
                 <p class="my-auto mr-5">Join to raise funds</p>
                 <div class="innerDiv"
                     style="height: 39px; width: 39px; border-radius: 39px; background-color: #A3E074;">
@@ -303,13 +303,89 @@
     </section>
 
     <section>
-        <div class="section_6_1">
+        <!-- <div class="section_6_1">
             <div class="section_6_1_1">
                 <p>Meet the</p>
                 <h4 class="mobile_heading_55 desktop_heading_55">AngelEye Advisors</h4>
-            </div>
+            </div> -->
             <!-- <div class="section_6_2"> -->
-            <div class="section_6_2_1">
+
+            <div class="rounded section_6_1_1">
+                <p>Meet the</p>
+                <h4 class="mobile_heading_55 desktop_heading_55 section_founders_heading">AngelEye Advisors
+                </h4>
+                <div class="owl-carousel owl-theme">
+                    <div class="owl-item">
+                        <div class="  flex-column">
+                            <div class="section_6_2_1_1">
+                                <div class="hovered">
+                                    <img src="assets/Images/MohitThukral.png">
+                                </div>
+                                <h5>Mohit Thukral</h5>
+                                <p>
+                                    Founder & Managing Partner Vivtera / Board Member Arise Founder & Trustee Plaksha/
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="  flex-column">
+                            <div class="section_6_2_1_1">
+                                <div class="hovered">
+                                    <img src="assets/Images/AshishKashyap.png">
+                                </div>
+                                <h5>Ashish Kashyap</h5>
+                                <p>
+                                    Founder, IND Money
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="  flex-column">
+                            <div class="section_6_2_1_1">
+                                <div class="hovered">
+                                    <img src="assets/Images/AnjaliSingh.png">
+                                </div>
+                                <h5>Anjali Singh</h5>
+                                <p>
+                                    MD, Deutsche Bank India
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="  ">
+                            <div class="section_6_2_1_1">
+                                <div class="hovered">
+                                    <img src="assets/Images/ShaliniSarin.png">
+                                </div>
+                                <h5>Shalini Sarin</h5>
+                                <p>
+                                    Founder, IND Money
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-item">
+                        <div class="  flex-column">
+                            <div class="section_6_2_1_1">
+                                <div class="hovered">
+                                    <img src="assets/Images/ShaliniSarin.png">
+                                </div>
+                                <h5>Shalini Sarin</h5>
+                                <p>
+                                    Founder, IND Money
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- <div class="section_6_2_1">
                 <div class="section_6_2_1_1">
                     <div class="hovered">
                         <img src="assets/Images/MohitThukral.png">
@@ -346,7 +422,7 @@
                         Founder, IND Money
                     </p>
                 </div>
-            </div>
+            </div> -->
             <!-- </div> -->
         </div>
     </section>
@@ -512,26 +588,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
-    <script>
-        let items = document.querySelectorAll('#featureContainer .carousel .carousel-item');
-        items.forEach((el) => {
-            const minPerSlide = 4
-            let next = el.nextElementSibling
-            for (var i = 1; i < minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                    next = items[0]
-                }
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-        })
-        $(document).ready(function () {
-            $('#featureCarousel').carousel({ interval: false });
-            $('#featureCarousel').carousel('pause');
-        });
-    </script>
 
     <script>
         $(document).ready(function () {
@@ -552,13 +608,13 @@
                     575: { items: 1 },
                     768: { items: 2 },
                     991: { items: 3 },
-                    // 1200: { items: 4 }
-                }
+                    1200: { items: 4 }
+                },
+                autoplayHoverPause:true
             });
         });
     </script>
-
-
+    
 </body>
 
 </html>

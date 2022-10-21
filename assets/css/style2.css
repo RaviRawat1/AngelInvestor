@@ -222,6 +222,10 @@
     .exclusive_Deals {
         margin-top: 37%;
     }
+
+    .section_6_2_1_1 {
+        margin-left: 50px;
+    }
 }
 
 @media screen and (min-width: 501px) {
@@ -264,7 +268,7 @@
     }
 
     .rounded {
-        padding-left: 5%;
+        padding-left: 1.5%;
     }
 
 
@@ -282,9 +286,9 @@
     margin-top: 40px;
 }
 
-.navbar .navbar-toggler .navbar-toggler-icon {
+/* .navbar .navbar-toggler .navbar-toggler-icon {
     background-color: white !important;
-}
+} */
 
 .nav-item {
     padding: 0px 25px !important;
@@ -495,8 +499,11 @@
     background-color: #221333;
     height: auto;
     width: 100%;
-
     margin: 40px 0px;
+}
+
+.section_5_{
+    width: 100%;
 }
 
 .section_5_1 {
@@ -531,6 +538,10 @@
     text-align: center;
 }
 
+.section_6_1_1 {
+    padding: 0 5%;
+}
+
 .section_6_1_1 p {
     font-family: 'Inter';
     font-style: normal;
@@ -556,7 +567,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 0 5%;
+    /* padding: 0 5%; */
 }
 
 .hovered:hover {
@@ -582,7 +593,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 68px;
+    /* margin-top: 68px; */
     width: 250px;
 }
 
@@ -1027,136 +1038,16 @@ Footer
 raiseFund Style
 *********************************/
 
-
-
-
-
-
-
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-} */
-
-
-
-@media (max-width: 767px) {
-    #featureContainer .carousel-inner .carousel-item>div {
-        display: none;
-    }
-
-    #featureContainer .carousel-inner .carousel-item>div:first-child {
-        display: block;
-    }
-}
-
-#featureContainer .carousel-inner .carousel-item.active,
-#featureContainer .carousel-inner .carousel-item-next,
-#featureContainer .carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-
-    #featureContainer .carousel-inner .carousel-item-end.active,
-    #featureContainer .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
-    }
-
-    #featureContainer .carousel-inner .carousel-item-start.active,
-    #featureContainer .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
-    }
-
-    #featureContainer .card img {
-        width: 90%;
-        height: 40vh;
-    }
-
-    #featureContainer .carousel-item {
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 767px) {
-    #featureContainer .card img {
-        width: 100%;
-        height: 75vh;
-    }
-}
-
-#featureContainer .carousel-inner .carousel-item-end,
-#featureContainer .carousel-inner .carousel-item-start {
-    transform: translateX(0);
-}
-
-#featureContainer .card {
-    border: 0;
-}
-
-#featureContainer .card {
-    position: relative;
-}
-
-#featureContainer .card .card-img-overlays {
-    position: absolute;
-    bottom: 15%;
-    left: 10%;
-    color: #fff;
-    font-weight: bolder;
-}
-
-#featureContainer a {
-    text-decoration: none;
-}
-
-#featureContainer .indicator {
-    border: 1px solid rgb(202, 202, 202);
-    padding: 3px 6px 3px 6px;
-}
-
-#featureContainer .indicator:hover {
-    background-color: blue;
-    border: 1px solid blue;
-    transition: 200ms;
-}
-
-#featureContainer .indicator:hover {
-    color: white;
-    transition: 200ms;
-}
-
-#featureContainer .indicator {
-    color: lightgray;
-}
-
-#featureContainer .float-end {
-    padding-top: 10px;
-}
-
 .innerDiv:hover .arrow_image {
     left: -5px;
+}
+
+.innerDiv{
+    cursor: pointer;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url(/assets/Images/burger_icon.png) !important;
 }
 
 .arrow_image {

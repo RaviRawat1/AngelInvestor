@@ -11,12 +11,16 @@
     color: #000000;
 }
 
-.navbar .navbar-toggler .navbar-toggler-icon {
+/* .navbar .navbar-toggler .navbar-toggler-icon {
     background-color: white !important;
+} */
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url(/assets/Images/burger_icon.png) !important;
 }
 
 .upperSection_bg {
-    background: linear-gradient(111.28deg, #63448D -16.05%, #190F33 103.82%), #110F14;
+    background: linear-gradient(166.23deg, #63448D 21.32%, #190F33 88.22%), #110F14;
 }
 
 .logo_text {
@@ -65,7 +69,8 @@
 
 .raiseFund_body {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -245,12 +250,13 @@ Footer
 
 .section_footer {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
+    min-height: 72px;
     width: 100%;
     background-color: #614189;
+    padding: 0 5%;
 }
 
 .section_footer_1 h6 {
@@ -269,8 +275,8 @@ Footer
 
 .section_footer_2 {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    flex-wrap: wrap;
+    /* justify-content: end; */
 }
 
 .section_footer_2 h6 {
