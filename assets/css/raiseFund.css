@@ -1,14 +1,18 @@
-.customButton {
-    background: #08E7F9;
+.custom_submit_button {
+    background: #A3E074 !important;
     border-radius: 5px;
-    width: 128px;
-    height: 36px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 145.5%;
-    color: #000000;
+    height: 45px;
+    font-family: 'Inter' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 145.5% !important;
+    text-align: center !important;
+    color: #000000 !important;
+}
+
+.form-group input:focus {
+    border-color: #A3E074 !important;
 }
 
 /* .navbar .navbar-toggler .navbar-toggler-icon {
@@ -94,7 +98,7 @@
     padding: 28px;
 }
 
-.custom_submit_button {
+/* .custom_submit_button {
     background: #08E7F9 !important;
     border-radius: 5px;
     font-family: 'Inter';
@@ -104,7 +108,7 @@
     line-height: 145.5%;
     text-align: center;
     color: #000000;
-}
+} */
 
 .section_MessageRaiseFund {
     padding: 120px 0px;

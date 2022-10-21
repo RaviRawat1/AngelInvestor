@@ -207,7 +207,7 @@
     } */
 
     .section_5 {
-        padding: 40px 100px 60px;
+        padding: 40px 50px 60px;
     }
 
     .section_5_1 h5 {
@@ -256,7 +256,7 @@
 
     .section_4 {
         margin-bottom: 180px;
-        height: 600px;
+        height: 750px;
     }
 
     .section_5 {
@@ -412,6 +412,10 @@
 
 }
 
+.form-control {
+    border: 2px solid #ced4da !important;
+}
+
 .section_4_1_2_1,
 .section_4_1_2_2,
 .section_4_1_2_3,
@@ -420,7 +424,7 @@
     height: 60px;
     background: #F3F3F3;
     border-radius: 5px;
-    width: 170px;
+    width: 150px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -1062,13 +1066,13 @@ raiseFund Style
     background: #A3E074 !important;
     border-radius: 5px;
     height: 45px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 145.5%;
-    text-align: center;
-    color: #000000;
+    font-family: 'Inter' !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 145.5% !important;
+    text-align: center !important;
+    color: #000000 !important;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
