@@ -11,6 +11,19 @@
     color: #000000 !important;
 }
 
+.customButton {
+    background: #08E7F9;
+    border-radius: 5px;
+    width: 128px;
+    height: 36px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 145.5%;
+    color: #000000;
+}
+
 .form-group input:focus {
     border-color: #A3E074 !important;
 }
@@ -19,7 +32,7 @@
     background-color: white !important;
 } */
 
-.navbar-light .navbar-toggler-icon{
+.navbar-light .navbar-toggler-icon {
     background-image: url(/assets/Images/burger_icon.png) !important;
 }
 
@@ -291,4 +304,93 @@ Footer
     line-height: 214.5%;
     color: #FFFFFF;
     text-align: right;
+}
+
+.fundAbout {
+    padding: 4% 5%;
+}
+
+.fundAbout_2 h5 {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 52px;
+    color: #000000;
+}
+
+.fundAbout_1 {
+    margin-right: 100px;
+}
+
+.fundAbout_2 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145.5%;
+    color: #000000;
+}
+
+.fundKeyPeople {
+    background: #FBFAFC;
+    padding: 0 5%;
+}
+
+.fundAbout_container {
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    /* padding: 0 5%; */
+}
+
+.keyPeople_heading {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    padding: 30px 0;
+}
+
+.keyPeople_Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.keyPeople_Container div {
+    width: 260px;
+}
+
+.keyPeople_Container div h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 105%;
+    text-align: center;
+    color: #0A0A0A;
+}
+
+.keyPeople_Container div h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 105%;
+    text-align: center;
+    color: #0A0A0A;
+}
+
+.keyPeople_Container div p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 105%;
+    text-align: center;
+    color: #000000;
 }
