@@ -50,6 +50,10 @@
     .margin_top_10 {
         margin-top: 10px;
     }
+
+    .section_refer_2{
+        margin-top: 15px;
+    }
 }
 
 @media screen and (min-width:501px) {
@@ -87,7 +91,7 @@
 }
 
 .menu_ul li a {
-    font-family: "Inter" !important;
+    font-family: "Inter, sans-serif" !important;
     font-style: normal !important;
     font-weight: 500 !important;
     font-size: 14px !important;
@@ -105,7 +109,7 @@
     border-radius: 5px;
     width: 128px;
     height: 36px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -138,7 +142,7 @@
 }
 
 .investing_text {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -184,7 +188,7 @@
 
 #vertical_btn p,
 #vertical_btn_2 p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -231,7 +235,7 @@
     }
 
     .exclusive_Deals {
-        margin-top: 37%;
+        margin-top: 45%;
     }
 
     .section_6_2_1_1 {
@@ -349,7 +353,7 @@
 }
 
 .section_3_2 h5 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -358,7 +362,7 @@
 }
 
 .section_3_2 h6 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -410,7 +414,7 @@
 }
 
 .section_join_to_invest_1 p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -421,6 +425,7 @@
 .arrow_animation {
     display: flex;
     height: 40px;
+    cursor: pointer;
 }
 
 .section_join_to_raiseFund {
@@ -468,7 +473,7 @@
     background: #F3F3F3;
     border-radius: 5px;
     width: 150px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -516,7 +521,7 @@
 }
 
 .section_founder_detail h5 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -526,7 +531,7 @@
 }
 
 .section_founder_detail p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -576,7 +581,7 @@
 }
 
 .section_5_3 h6 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -590,7 +595,7 @@
 }
 
 .section_6_1_1 p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -645,7 +650,7 @@
 }
 
 .section_6_2_1_1 h5 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -656,7 +661,7 @@
 }
 
 .section_6_2_1_1 p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -701,7 +706,7 @@
 }
 
 .section_refer_2 h6 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1052,7 +1057,7 @@ Footer
 }
 
 .section_footer_1 h6 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1072,7 +1077,7 @@ Footer
 }
 
 .section_footer_2 h6 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1115,13 +1120,14 @@ raiseFund Style
     background: #A3E074 !important;
     border-radius: 5px;
     height: 45px;
-    font-family: 'Inter' !important;
+    font-family: 'Inter', sans-serif !important;
     font-style: normal !important;
     font-weight: 500 !important;
     font-size: 14px !important;
     line-height: 145.5% !important;
     text-align: center !important;
     color: #000000 !important;
+    box-shadow: 0 0px 0px 0px rgba(0,0,0,.35) !important;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');

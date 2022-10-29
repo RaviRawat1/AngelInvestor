@@ -1221,7 +1221,7 @@ Scroll Down Button Animation
  *  Utilities
 =================================*/
 /* 
-font-family: 'Inter', sans-serif;
+font-family: 'Inter', sans-serif, sans-serif;
 */
 @media only screen and (max-width: 767px) {
   .container,
