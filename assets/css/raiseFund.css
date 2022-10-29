@@ -553,7 +553,7 @@ Footer
 .keyPeople_Container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .keyPeople_Container div {
@@ -589,4 +589,48 @@ Footer
     line-height: 105%;
     text-align: center;
     color: #000000;
+}
+
+.sectionFundAdditionalInformation {
+    background: #FBFAFC;
+    margin: 30px 0;
+}
+
+.fundAdditionalInformationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.borderRight {
+    border-right: 2px solid #F0EEF2;
+    height: 90px;
+}
+
+.fundAdditionalInformation {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.fund_goals h5 {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000;
+    /* margin: 40px 0; */
+}
+
+.section_fund_goals{
+    background: #FBFAFC;
+    margin: 20px 0;
+    padding: 20px 0;
 }
