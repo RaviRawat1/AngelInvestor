@@ -1,3 +1,57 @@
+@font-face {
+    font-family: Cormorant SC;
+    src: url(/assets/fonts/CormorantSC-Bold.ttf);
+    src: url(/assets/fonts/CormorantSC-Light.ttf);
+    src: url(/assets/fonts/CormorantSC-Medium.ttf);
+    src: url(/assets/fonts/CormorantSC-Regular.ttf);
+    src: url(/assets/fonts/CormorantSC-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/assets/fonts/Inter-VariableFont.ttf);
+}
+
+@media screen and (min-width:501px) {
+    .desktop_heading_65 {
+        font-size: 65px;
+    }
+
+    .desktop_heading_55 {
+        font-size: 55px;
+    }
+
+    .desktop_heading_79 {
+        font-size: 55px;
+    }
+
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .mobile_heading_65 {
+        font-size: 35px;
+    }
+
+    .mobile_heading_55 {
+        font-size: 40px;
+    }
+
+    .mobile_heading_79 {
+        font-size: 45px;
+    }
+
+    .margin_top_10 {
+        margin-top: 10px;
+    }
+}
+
 .custom_submit_button {
     background: #A3E074 !important;
     border-radius: 5px;
@@ -64,6 +118,40 @@
     padding: 0px 25px !important;
 }
 
+.nav-link:hover:before {
+    content: "[";
+    margin-right: 10px;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav-link:after {
+    content: "]";
+    margin-left: 10px;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.nav-link:hover:before,
+.nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
 .section_raiseFund {
     background: #F5F3F8;
     padding-bottom: 46px;
@@ -84,16 +172,83 @@
     color: #FFFFFF;
 }
 
-.raiseFund_banner_container{
-    width: 100%;
-}
-
-.raiseFund_banner_container img{
-    width: 80%;
+.section_join_to_invest {
+    height: 272px;
+    background: #B5F9FF;
+    border-radius: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 90%;
+    padding: 0 5%;
+    /* position: absolute;
+    top: -122px;
+    left: 5%; */
     /* margin-left: auto;
     margin-right: auto; */
-    display: block;
+    justify-content: space-between;
 }
+
+.section_join_to_invest_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.section_join_to_invest_1 h5 {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 55px; */
+    line-height: 100%;
+    color: #000000;
+}
+
+.section_join_to_invest_1 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145.5%;
+    color: #000000;
+}
+
+.section_join_to_raiseFund {
+    min-height: 259px;
+    background: #EFE3FF;
+    border-radius: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 90%;
+    padding: 0 5%;
+    /* position: absolute;
+    bottom: -122px;
+    left: 5%; */
+    justify-content: space-between;
+}
+
+.section_4_1 h4 {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 55px; */
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.section_4_1_2 {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 5%;
+
+}
+
+label {
+    display: block !important;
+    
+  }
 
 .raiseFund_body {
     display: flex;
@@ -209,8 +364,6 @@ ul {
     margin-top: 60px;
     padding: 0 7%;
 }
-
-
 
 .section_founder_detail {
     padding: 0 30px;
