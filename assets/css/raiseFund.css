@@ -63,7 +63,7 @@
     line-height: 145.5% !important;
     text-align: center !important;
     color: #000000 !important;
-    box-shadow: 0 0px 0px 0px rgba(0,0,0,.35) !important;
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .35) !important;
 }
 
 .customButton {
@@ -248,8 +248,8 @@
 
 label {
     display: block !important;
-    
-  }
+
+}
 
 .raiseFund_body {
     display: flex;
@@ -364,6 +364,34 @@ ul {
 .team_founder {
     margin-top: 60px;
     padding: 0 7%;
+}
+
+.section_partner_detail h5 {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 52px;
+    /* text-align: center; */
+    color: #000000;
+}
+
+.section_partner_detail p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145.5%;
+    color: #000000;
+}
+
+.section_partner_detail h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 105%;
+    color: #0A0A0A;
 }
 
 .section_founder_detail {
@@ -533,11 +561,12 @@ Footer
 .keyPeople_Container div h5 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 105%;
     text-align: center;
     color: #0A0A0A;
+    margin-top: 10px;
 }
 
 .keyPeople_Container div h6 {
