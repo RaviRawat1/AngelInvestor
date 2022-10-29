@@ -89,6 +89,7 @@
 
 .navbar-light .navbar-toggler-icon {
     background-image: url(/assets/Images/burger_icon.png) !important;
+    background-size: 90% !important;
 }
 
 .upperSection_bg {
@@ -160,15 +161,16 @@
 
 .raiseFund_header {
     background: linear-gradient(111.28deg, #63448D -16.05%, #190F33 103.82%), #110F14;
-    height: 95px;
+    min-height: 95px;
+    padding: 25px 0 25px;
 }
 
 .raiseFund_header h5 {
     font-family: 'Cormorant SC';
     font-style: normal;
     font-weight: 400;
-    font-size: 42px;
-    line-height: 220%;
+    /* font-size: 42px; */
+    line-height: 85%;
     text-align: center;
     color: #FFFFFF;
 }
