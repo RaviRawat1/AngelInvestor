@@ -66,10 +66,10 @@
             </div>
         </div>
         <div class="raiseFund_body">
-            <div class="raiseFund_body_1">
-                <img src="assets/Images/becomeInvestor.png" width="90%" class="mx-auto"/>
+            <div class="raiseFund_body_1 col-md-6">
+                <img src="assets/Images/becomeInvestor.png" width="100%" class="mx-auto"/>
             </div>
-            <div class="raiseFund_body_2">
+            <div class="raiseFund_body_2 col-md-6">
                 <p>Please Fill up the form</p>
                 <form class="raiseFund_body_2_1">
                     <div class="form-group">
@@ -101,31 +101,41 @@
                         <label class="custom-control-label red" for="existing">Existing</label>
                     </div>
 
-                    <h5>What is minimum ticket size - tick one below?</h5>
+                    <h5>What is minimum ticket size?</h5>
+                    <div class="custom-control custom-radio custom-control">
+                        <input type="radio" id="ticketSize_0_2" name="ticketSize" class="custom-control-input "
+                            value="ticketSize_0_2">
+                        <label class="custom-control-label green" for="ticketSize_0_2">₹ < 2 Lakh <span style="color: red;">*</span></label>
+                    </div>
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_5" name="ticketSize" class="custom-control-input "
                             value="ticketSize_5">
-                        <label class="custom-control-label green" for="ticketSize_5">5</label>
+                        <label class="custom-control-label green" for="ticketSize_2_5">₹ 2-5 Lakh <span style="color: red;">*</span></label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control">
+                        <input type="radio" id="ticketSize_5" name="ticketSize" class="custom-control-input "
+                            value="ticketSize_5">
+                        <label class="custom-control-label green" for="ticketSize_5">₹ 5-10 Lakh</label>
                     </div>
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_10" name="ticketSize" class="custom-control-input"
                             value="ticketSize_10">
-                        <label class="custom-control-label red" for="ticketSize_10">10</label>
+                        <label class="custom-control-label red" for="ticketSize_10">₹ 10-15 Lakh</label>
                     </div>
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_15" name="ticketSize" class="custom-control-input "
                             value="ticketSize_15">
-                        <label class="custom-control-label green" for="ticketSize_15">15</label>
+                        <label class="custom-control-label green" for="ticketSize_15">₹ 15-20 Lakh</label>
                     </div>
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_20" name="ticketSize" class="custom-control-input"
                             value="ticketSize_20">
-                        <label class="custom-control-label red" for="ticketSize_20">20</label>
+                        <label class="custom-control-label red" for="ticketSize_20">₹ 20-25 Lakh</label>
                     </div>
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_25" name="ticketSize" class="custom-control-input"
                             value="ticketSize_25">
-                        <label class="custom-control-label red" for="ticketSize_25">>25</label>
+                        <label class="custom-control-label red" for="ticketSize_25">₹ > 25 Lakh</label>
                     </div>
 
                     <h5>Which are the top 3 industries you would like to invest in?</h5>
@@ -205,6 +215,30 @@
                                         <span>Crypto / NFT</span>
                                     </label>
                                 </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Tech/ SaaS</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Agri Tech</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Web 3.0</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" />
+                                        <span>Others</span>
+                                    </label>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -221,8 +255,19 @@
                     </div>
                     <div class="form-check form-check" style="margin-top: 50px; margin-left: 5px;">
                         <input class="form-check-input" type="checkbox" id="t&c" value="t&c">
-                        <label class="form-check-label" for="t&c">I agree to all Terms and Coditions</label>
+                        <label class="form-check-label" for="t&c">I agree to all <a href="#" style=" color: green; text-decoration: underline;">Terms and Coditions</a></label>
                     </div>
+                    <h5>
+                        Do review the information below carefully, before pressing submit
+                    </h5>
+                    <ol>
+                        <li> I understand that investments in startups & businesses can/may result in a complete loss.</li>
+                        <li>I understand that AngelEye does not verify information on the site, and I am responsible for undertaking my own due dilligence.</li>
+                        <li>I promise to hold AngelEye harmless against any damage that may happen to myself as a result of my use of AngelEye.</li>
+                        <li>If I invest, I will comply with all securities laws and as well as regulations of the land and will consult my own attorney and professional advisors where I need advice. </li>
+                        <li>I understand that I will be permanently banned from AngelEye and that I may face legal consequences if I falsely represent my accreditation status.</li>
+                        <li>I declare that I am resident of India, if not I will seperately inform AngelEye in writing.</li>
+                    </ol>
                     <a href="messageRaiseFundForm.htm">
                         <button type="submit" style="margin-top: 25px;" class="btn custom_submit_button col-md-12">Submit</button>
                     </a>
@@ -234,17 +279,17 @@
     <footer>
         <div class="section_footer">
             <div class="section_footer_1 ">
-                <h6>Terms &nbsp; &nbsp; |</h6>
-                <h6>&nbsp; &nbsp;Privacy &nbsp; &nbsp; |</h6>
-                <h6>&nbsp; &nbsp; © Angel-Eye, 2022</h6>
+                <a href="#"><h6>Terms &nbsp; &nbsp; |</h6></a>
+                <a href="#"><h6>&nbsp; &nbsp;Privacy &nbsp; &nbsp; |</h6></a>
+                <a href="#"><h6>&nbsp; &nbsp; © Angel-Eye, 2022</h6></a>
             </div>
             <div class="section_footer_2 ">
-                <h6>Contact Us &nbsp; &nbsp;|</h6>
-                <h6>&nbsp; &nbsp;About Us &nbsp; &nbsp; |</h6>
-                <h6>&nbsp; &nbsp; Careers &nbsp; &nbsp; |</h6>
-                <h6>&nbsp; &nbsp; Investors &nbsp; &nbsp; |</h6>
-                <h6>&nbsp; &nbsp;Founders &nbsp; &nbsp; </h6>
-                <a>&nbsp; &nbsp; &nbsp; &nbsp;<img src="assets/Images/instagram.png" /></a>
+                <a href="#"><h6>Contact Us &nbsp; &nbsp;|</h6></a>
+                <a href="aboutAngleEye.htm"><h6>&nbsp; &nbsp;About Us &nbsp; &nbsp; |</h6></a>
+                <a href="#"><h6>&nbsp; &nbsp; Careers &nbsp; &nbsp; |</h6></a>
+                <a href="#"><h6>&nbsp; &nbsp; Investors &nbsp; &nbsp; |</h6></a>
+                <a href="#"><h6>&nbsp; &nbsp;Founders &nbsp; &nbsp; </h6></a>
+                <a href="#">&nbsp; &nbsp; &nbsp; &nbsp;<img src="assets/Images/instagram.png" /></a>
             </div>
         </div>
     </footer>

@@ -51,7 +51,7 @@
         margin-top: 10px;
     }
 
-    .section_refer_2{
+    .section_refer_2 {
         margin-top: 15px;
     }
 }
@@ -78,6 +78,10 @@
     .hide-on-desktop {
         display: none;
     }
+}
+
+a:hover {
+    text-decoration: none !important;
 }
 
 .logo_text {
@@ -298,6 +302,7 @@
 .section_3_2 {
     /* margin-left: 76px; */
     margin-top: 40px;
+    position: relative;
 }
 
 /* .navbar .navbar-toggler .navbar-toggler-icon {
@@ -1127,7 +1132,7 @@ raiseFund Style
     line-height: 145.5% !important;
     text-align: center !important;
     color: #000000 !important;
-    box-shadow: 0 0px 0px 0px rgba(0,0,0,.35) !important;
+    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, .35) !important;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
@@ -1229,3 +1234,21 @@ raiseFund Style
         padding: 20px
     }
 } */
+
+.rotate {
+    width: 200px;
+    height: 200px;
+    animation-name: rotate2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+    position: absolute;
+    right: 180px;
+    top: 90px;
+}
+
+@keyframes rotate2{
+    from{ transform: rotate(360deg); }
+    to{ transform: rotate(-360deg); }
+}

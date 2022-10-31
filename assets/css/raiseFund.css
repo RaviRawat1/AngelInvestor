@@ -28,6 +28,39 @@
     .hide-on-desktop {
         display: none;
     }
+
+    .keyPeople_Container {
+        justify-content: space-between;
+        /* padding: 0 5%; */
+    }
+
+    .fundAbout_container {
+        justify-content: space-between;
+    }
+
+    .fundAbout_1 {
+        margin-right: 100px;
+    }
+
+    .section_5 {
+        padding: 40px 100px 60px;
+    }
+
+    .section_5_1 h5 {
+        font-size: 55px;
+    }
+
+    .hide-on-desktop {
+        display: none;
+    }
+
+    .angelEyeCommittment_1 {
+        width: 50%;
+    }
+
+    .aboutAngleEyeContainer {
+        flex-wrap: nowrap;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -49,6 +82,41 @@
 
     .margin_top_10 {
         margin-top: 10px;
+    }
+
+    .keyPeople_Container {
+        justify-content: center;
+        /* padding: 0 5%; */
+    }
+
+    .fundAbout_container {
+        justify-content: center;
+    }
+
+    .section_5 {
+        padding: 40px 50px 60px;
+    }
+
+    .section_5_1 h5 {
+        font-size: 35px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .angelEyeCommittment_1 {
+        width: 100%;
+    }
+
+    .aboutAngleEyeContainer {
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+
+    .aboutAngleEyeContainer_1 img {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
 
@@ -156,7 +224,7 @@
 
 .section_raiseFund {
     background: #F5F3F8;
-    padding-bottom: 46px;
+    /* padding-bottom: 46px; */
 }
 
 .raiseFund_header {
@@ -341,6 +409,25 @@ label {
     margin: 25px 0px 10px;
 }
 
+/* .raiseFund_body_2_1 label {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145.5%;
+    color: #000000;
+    margin: 25px 0px 10px;
+} */
+
+.raiseFund_body_2_1 ol li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145.5%;
+    color: #242424;
+}
+
 ul {
     column-count: 2;
     /* column-gap: 2rem; */
@@ -514,9 +601,7 @@ Footer
     color: #000000;
 }
 
-.fundAbout_1 {
-    margin-right: 100px;
-}
+
 
 .fundAbout_2 p {
     font-family: 'Inter', sans-serif;
@@ -534,8 +619,8 @@ Footer
 
 .fundAbout_container {
     display: flex;
-    flex-wrap: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
     /* padding: 0 5%; */
 }
 
@@ -553,7 +638,7 @@ Footer
 .keyPeople_Container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .keyPeople_Container div {
@@ -604,6 +689,27 @@ Footer
     padding: 0 5%;
 }
 
+.fundAdditionalInformation h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 105%;
+    text-align: center;
+    color: #402A62;
+    margin-top: 10px;
+}
+
+.fundAdditionalInformation p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 105%;
+    text-align: center;
+    color: #96909E;
+}
+
 .borderRight {
     border-right: 2px solid #F0EEF2;
     height: 90px;
@@ -626,11 +732,141 @@ Footer
     line-height: 52px;
     text-align: center;
     color: #000000;
-    /* margin: 40px 0; */
+    margin: 0 0 40px;
 }
 
-.section_fund_goals{
+.fund_goals img {
+    display: block;
+}
+
+.section_fund_goals {
     background: #FBFAFC;
     margin: 20px 0;
     padding: 20px 0;
+}
+
+.aboutAngleEyeContainer {
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutAngleEyeContainer_2,
+.aboutAngleEyeContainer_1 {
+    padding: 0 2%;
+}
+
+.aboutAngleEyeContainer_2 h5 {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 85%;
+    color: #190F32;
+}
+
+.aboutAngleEyeContainer_2 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145.5%;
+    color: #000000;
+}
+
+.section_5 {
+    background-color: #EEF2EB;
+    ;
+    height: auto;
+    width: 100%;
+    margin: 40px 0px;
+}
+
+.section_5_ {
+    width: 100%;
+}
+
+.section_5_1 {
+    padding-bottom: 50px;
+}
+
+.section_5_1 h5 {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 55px; */
+    text-align: center;
+    line-height: 100%;
+    color: #1D1138;
+    ;
+}
+
+.section_5_2 {
+    padding: 0 5%;
+}
+
+.section_5_3 {
+    margin-top: 6%;
+}
+
+.section_5_3 h6 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145.5%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.arrow_animation {
+    display: flex;
+    height: 40px;
+    cursor: pointer;
+}
+
+.innerDiv:hover .arrow_image {
+    left: -5px;
+}
+
+.innerDiv {
+    cursor: pointer;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+.arrow_image {
+    position: relative;
+    left: -15px;
+    top: 7px;
+    transition: left 300ms;
+    width: 25px;
+}
+
+.angelEyeCommittment_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 5%;
+    align-items: center;
+}
+
+.angelEyeCommittment_1 h5 {
+    font-family: 'Cormorant SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 85%;
+    color: #190F32;
+}
+
+.angelEyeCommittment_1 p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145.5%;
+    color: #000000;
 }
