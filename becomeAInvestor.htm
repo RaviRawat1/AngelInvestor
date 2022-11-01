@@ -67,15 +67,32 @@
         </div>
         <div class="raiseFund_body">
             <div class="raiseFund_body_1 col-md-6">
-                <img src="assets/Images/becomeInvestor.png"  class="mx-auto d-block"/>
+                <img src="assets/Images/becomeInvestor.png" class="mx-auto d-block" />
             </div>
             <div class="raiseFund_body_2 col-md-6">
                 <p>Please Fill up the form</p>
                 <form class="raiseFund_body_2_1">
                     <div class="form-group">
                         <label for="enterFullName"></label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Enter Full Name">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Full Name">
                     </div>
+
+                    <h5>Are you an Indian Residence?</h5>
+                    <div class="custom-control custom-radio custom-control-inline mb-2">
+                        <input type="radio" id="indian" name="rd" class="custom-control-input " value="indian">
+                        <label class="custom-control-label green" for="indian">Yes</label>
+                        
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="notIndian" name="rd" class="custom-control-input" value="notIndian">
+                        <label class="custom-control-label red" for="notIndian">No</label>
+                    </div>
+
+                    <div class="reveal-if-active">
+                        <label for="which-dog">Good call. What's the name of your favorite dog?</label>
+                        <input class="require-if-active" type="text" id="which-dog" name="which-dog" data-require-pair="#choice-animals-dogs">
+                    </div>
+
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4"></label>
@@ -86,6 +103,7 @@
                             <input type="email" class="form-control" id="Email" placeholder="Email">
                         </div>
                     </div>
+
                     <div class="form-group">
                         <label for="enterFullName"></label>
                         <input type="text" class="form-control" id="panCard" placeholder="Pan Card No.">
@@ -105,12 +123,14 @@
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_0_2" name="ticketSize" class="custom-control-input "
                             value="ticketSize_0_2">
-                        <label class="custom-control-label green" for="ticketSize_0_2">₹ < 2 Lakh <span style="color: red;">*</span></label>
+                        <label class="custom-control-label green" for="ticketSize_0_2">₹ < 2 Lakh <span
+                                style="color: red;">*</span></label>
                     </div>
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_5" name="ticketSize" class="custom-control-input "
                             value="ticketSize_5">
-                        <label class="custom-control-label green" for="ticketSize_2_5">₹ 2-5 Lakh <span style="color: red;">*</span></label>
+                        <label class="custom-control-label green" for="ticketSize_2_5">₹ 2-5 Lakh <span
+                                style="color: red;">*</span></label>
                     </div>
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_5" name="ticketSize" class="custom-control-input "
@@ -255,21 +275,29 @@
                     </div>
                     <div class="form-check form-check" style="margin-top: 50px; margin-left: 5px;">
                         <input class="form-check-input" type="checkbox" id="t&c" value="t&c">
-                        <label class="form-check-label" for="t&c">I agree to all <a href="#" style=" color: green; text-decoration: underline;">Terms and Coditions</a></label>
+                        <label class="form-check-label" for="t&c">I agree to all <a href="#"
+                                style=" color: green; text-decoration: underline;">Terms and Coditions</a></label>
                     </div>
                     <h5>
                         Do review the information below carefully, before pressing submit
                     </h5>
                     <ol>
-                        <li> I understand that investments in startups & businesses can/may result in a complete loss.</li>
-                        <li>I understand that AngelEye does not verify information on the site, and I am responsible for undertaking my own due dilligence.</li>
-                        <li>I promise to hold AngelEye harmless against any damage that may happen to myself as a result of my use of AngelEye.</li>
-                        <li>If I invest, I will comply with all securities laws and as well as regulations of the land and will consult my own attorney and professional advisors where I need advice. </li>
-                        <li>I understand that I will be permanently banned from AngelEye and that I may face legal consequences if I falsely represent my accreditation status.</li>
-                        <li>I declare that I am resident of India, if not I will seperately inform AngelEye in writing.</li>
+                        <li> I understand that investments in startups & businesses can/may result in a complete loss.
+                        </li>
+                        <li>I understand that AngelEye does not verify information on the site, and I am responsible for
+                            undertaking my own due dilligence.</li>
+                        <li>I promise to hold AngelEye harmless against any damage that may happen to myself as a result
+                            of my use of AngelEye.</li>
+                        <li>If I invest, I will comply with all securities laws and as well as regulations of the land
+                            and will consult my own attorney and professional advisors where I need advice. </li>
+                        <li>I understand that I will be permanently banned from AngelEye and that I may face legal
+                            consequences if I falsely represent my accreditation status.</li>
+                        <li>I declare that I am resident of India, if not I will seperately inform AngelEye in writing.
+                        </li>
                     </ol>
                     <a href="messageRaiseFundForm.htm">
-                        <button type="submit" style="margin-top: 25px;" class="btn custom_submit_button col-md-12">Submit</button>
+                        <button type="submit" style="margin-top: 25px;"
+                            class="btn custom_submit_button col-md-12">Submit</button>
                     </a>
                 </form>
             </div>
@@ -279,16 +307,32 @@
     <footer>
         <div class="section_footer">
             <div class="section_footer_1 ">
-                <a href="#"><h6>Terms &nbsp; &nbsp; |</h6></a>
-                <a href="#"><h6>&nbsp; &nbsp;Privacy &nbsp; &nbsp; |</h6></a>
-                <a href="#"><h6>&nbsp; &nbsp; © Angel-Eye, 2022</h6></a>
+                <a href="#">
+                    <h6>Terms &nbsp; &nbsp; |</h6>
+                </a>
+                <a href="#">
+                    <h6>&nbsp; &nbsp;Privacy &nbsp; &nbsp; |</h6>
+                </a>
+                <a href="#">
+                    <h6>&nbsp; &nbsp; © Angel-Eye, 2022</h6>
+                </a>
             </div>
             <div class="section_footer_2 ">
-                <a href="#"><h6>Contact Us &nbsp; &nbsp;|</h6></a>
-                <a href="aboutAngleEye.htm"><h6>&nbsp; &nbsp;About Us &nbsp; &nbsp; |</h6></a>
-                <a href="#"><h6>&nbsp; &nbsp; Careers &nbsp; &nbsp; |</h6></a>
-                <a href="#"><h6>&nbsp; &nbsp; Investors &nbsp; &nbsp; |</h6></a>
-                <a href="#"><h6>&nbsp; &nbsp;Founders &nbsp; &nbsp; </h6></a>
+                <a href="#">
+                    <h6>Contact Us &nbsp; &nbsp;|</h6>
+                </a>
+                <a href="aboutAngleEye.htm">
+                    <h6>&nbsp; &nbsp;About Us &nbsp; &nbsp; |</h6>
+                </a>
+                <a href="#">
+                    <h6>&nbsp; &nbsp; Careers &nbsp; &nbsp; |</h6>
+                </a>
+                <a href="#">
+                    <h6>&nbsp; &nbsp; Investors &nbsp; &nbsp; |</h6>
+                </a>
+                <a href="#">
+                    <h6>&nbsp; &nbsp;Founders &nbsp; &nbsp; </h6>
+                </a>
                 <a href="#">&nbsp; &nbsp; &nbsp; &nbsp;<img src="assets/Images/instagram.png" /></a>
             </div>
         </div>
@@ -296,6 +340,35 @@
 
 
 
+    <script>
+        var FormStuff = {
+
+            init: function () {
+                this.applyConditionalRequired();
+                this.bindUIActions();
+            },
+
+            bindUIActions: function () {
+                $("input[type='radio'], input[type='checkbox']").on("change", this.applyConditionalRequired);
+            },
+
+            applyConditionalRequired: function () {
+
+                $(".require-if-active").each(function () {
+                    var el = $(this);
+                    if ($(el.data("require-pair")).is(":checked")) {
+                        el.prop("required", true);
+                    } else {
+                        el.prop("required", false);
+                    }
+                });
+
+            }
+
+        };
+
+        FormStuff.init();
+    </script>
 
     <script src="assets/js/vendor/bootstrap.min.js"></script>
 </body>
