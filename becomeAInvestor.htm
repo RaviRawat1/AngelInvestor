@@ -24,10 +24,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between px-5 upperSection_bg">
+    <nav class="navbar navbar-expand-lg navbar-light navbar bg-light justify-content-between px-5 upperSection_bg">
         <a class="navbar-brand logo_text" href="index.htm">
-            <img src="assets/Images/logo_3.png" width="30" height="30" class="d-inline-block align-top" alt="logo" />
-            AngelEye
+            <img src="assets/Images/logo_4.png" width="250px" class="d-inline-block align-top" alt="logo" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +35,7 @@
         <div class="collapse navbar-collapse menu_ul" id="navbarNav">
             <ul class="navbar-nav ml-auto menu_ul">
                 <li class="nav-item">
-                    <a class="nav-link" href="becomeAInvestor.htm"> Investors</a>
+                    <a class="nav-link" href="becomeAInvestor.htm"> Investors </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="raiseFund.htm"> Founders </a>
@@ -77,7 +76,11 @@
                         <input type="text" class="form-control" id="inputAddress" placeholder="Full Name">
                     </div>
 
-                    <h5>Are you an Indian Residence?</h5>
+                    <div class="form-group">
+                        <label for="countryName"></label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Country Name">
+                    </div>
+                    <!-- <h5>Are you an Indian Residence?</h5>
                     <div class="custom-control custom-radio custom-control-inline mb-2">
                         <input type="radio" id="indian" name="rd" class="custom-control-input " value="indian">
                         <label class="custom-control-label green" for="indian">Yes</label>
@@ -91,7 +94,7 @@
                     <div class="reveal-if-active">
                         <label for="which-dog">Good call. What's the name of your favorite dog?</label>
                         <input class="require-if-active" type="text" id="which-dog" name="which-dog" data-require-pair="#choice-animals-dogs">
-                    </div>
+                    </div> -->
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -129,8 +132,7 @@
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_5" name="ticketSize" class="custom-control-input "
                             value="ticketSize_5">
-                        <label class="custom-control-label green" for="ticketSize_2_5">₹ 2-5 Lakh <span
-                                style="color: red;">*</span></label>
+                        <label class="custom-control-label green" for="ticketSize_2_5">₹ 2-5 Lakh
                     </div>
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_5" name="ticketSize" class="custom-control-input "
@@ -314,42 +316,11 @@
                 <a href="aboutAngleEye.htm"><h6>&nbsp; &nbsp;About Us &nbsp; &nbsp; |</h6></a>
                 <a href="becomeAInvestor.htm"><h6>&nbsp; &nbsp; Investors &nbsp; &nbsp; |</h6></a>
                 <a href="raiseFund.htm"><h6>&nbsp; &nbsp;Founders &nbsp; &nbsp; </h6></a>
+                <a href="#"><h6>&nbsp; &nbsp;Subsidiary of Angel Eye &nbsp; &nbsp; </h6></a>
                 <a href="">&nbsp; &nbsp; &nbsp; &nbsp;<img src="assets/Images/instagram.png" /></a>
             </div>
         </div>
     </footer>
-
-
-
-    <script>
-        var FormStuff = {
-
-            init: function () {
-                this.applyConditionalRequired();
-                this.bindUIActions();
-            },
-
-            bindUIActions: function () {
-                $("input[type='radio'], input[type='checkbox']").on("change", this.applyConditionalRequired);
-            },
-
-            applyConditionalRequired: function () {
-
-                $(".require-if-active").each(function () {
-                    var el = $(this);
-                    if ($(el.data("require-pair")).is(":checked")) {
-                        el.prop("required", true);
-                    } else {
-                        el.prop("required", false);
-                    }
-                });
-
-            }
-
-        };
-
-        FormStuff.init();
-    </script>
 
     <script src="assets/js/vendor/bootstrap.min.js"></script>
 </body>
