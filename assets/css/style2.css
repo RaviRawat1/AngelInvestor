@@ -107,23 +107,23 @@
     }
 
     .rotate {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         animation-name: rotate2;
         animation-duration: 15s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         border-radius: 50%;
         position: absolute;
-        right: 180px;
-        top: 90px;
+        right: 485px;
+        top: 112px;
         z-index: 10;
     }
 
     .rotate_logo {
         position: absolute;
-        right: 245px;
-        top: 161px;
+        right: 525px;
+        top: 157px;
         z-index: 10;
     }
 }

@@ -78,7 +78,22 @@
 
                     <div class="form-group">
                         <label for="countryName"></label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Country Name">
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Nationality">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1"></label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Choose Proof of Address</option>
+                            <option value="1">Aadhar Card</option>
+                            <option value="2">Passport</option>
+                            <option value="3">Driving Licence</option>
+                            <!-- <option value="2">MVP</option>
+                            <option value="2">Growth</option> -->
+                        </select>
+                    </div>
+                    <div class="my-3">
+                        <label for="formFile" class="form-label">Upload a copy of proof (jpeg and jpg)</label>
+                        <input class="form-control" type="file" id="formFile"></input>
                     </div>
                     <!-- <h5>Are you an Indian Residence?</h5>
                     <div class="custom-control custom-radio custom-control-inline mb-2">
@@ -126,7 +141,7 @@
                     <div class="custom-control custom-radio custom-control">
                         <input type="radio" id="ticketSize_0_2" name="ticketSize" class="custom-control-input "
                             value="ticketSize_0_2">
-                        <label class="custom-control-label green" for="ticketSize_0_2">₹ < 2 Lakh <span
+                        <label class="custom-control-label green" for="ticketSize_0_2">₹ 1-2 Lakh <span
                                 style="color: red;">*</span></label>
                     </div>
                     <div class="custom-control custom-radio custom-control">
@@ -275,11 +290,6 @@
                         <input type="radio" id="choosen" name="deals" class="custom-control-input" value="choosen">
                         <label class="custom-control-label red" for="choosen">No, only those I have chosen</label>
                     </div>
-                    <div class="form-check form-check" style="margin-top: 50px; margin-left: 5px;">
-                        <input class="form-check-input" type="checkbox" id="t&c" value="t&c">
-                        <label class="form-check-label" for="t&c">I agree to all <a href="#"
-                                style=" color: green; text-decoration: underline;">Terms and Coditions</a></label>
-                    </div>
                     <h5>
                         Do review the information below carefully, before pressing submit
                     </h5>
@@ -297,6 +307,11 @@
                         <li>I declare that I am resident of India, if not I will seperately inform AngelEye in writing.
                         </li>
                     </ol>
+                    <div class="form-check form-check" style="margin-top: 50px; margin-left: 5px;">
+                        <input class="form-check-input" type="checkbox" id="t&c" value="t&c">
+                        <label class="form-check-label" for="t&c">I agree to all <a href="#"
+                                style=" color: green; text-decoration: underline;">Terms and Coditions</a></label>
+                    </div>
                     <a href="messageRaiseFundForm.htm">
                         <button type="submit" style="margin-top: 25px;"
                             class="btn custom_submit_button col-md-12">Submit</button>
