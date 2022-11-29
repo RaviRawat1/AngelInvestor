@@ -148,6 +148,12 @@
     }
 }
 
+.navbar {
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
+}
+
 .custom_submit_button {
     background: #A3E074 !important;
     border-radius: 5px;
@@ -185,14 +191,14 @@
 
 .navbar-light .navbar-toggler-icon {
     background-image: url(/assets/Images/burger_icon.png) !important;
-    background-size: 90% !important;
+    background-size: 19px 19px !important;
 }
 
 .upperSection_bg {
     background: linear-gradient(166.23deg, #63448D 21.32%, #190F33 88.22%), #110F14;
 }
 
-.logo_text {
+/* .logo_text {
     font-family: "Cormorant SC" !important;
     font-style: normal !important;
     font-weight: 400 !important;
@@ -200,10 +206,10 @@
     line-height: 85% !important;
     text-align: center !important;
     color: #35e8f9 !important;
-}
+} */
 
 .menu_ul li a {
-    font-family: "Inter, sans-serif;" !important;
+    font-family: "Inter", sans-serif !important;
     font-style: normal !important;
     font-weight: 500 !important;
     font-size: 14px !important;
@@ -269,6 +275,7 @@
     line-height: 85%;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 60px;
 }
 
 .section_join_to_invest {
@@ -355,6 +362,10 @@ label {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+.raiseFund_body_2 {
+    padding-bottom: 60px;
 }
 
 .raiseFund_body_2 p {

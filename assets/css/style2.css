@@ -145,16 +145,16 @@
 }
 
 .navbar {
-    position: -webkit-sticky !important;
-    position: sticky !important;
-    top: 0 !important;
+    position: fixed !important;
+    width: 100%;
+    z-index: 9999;
 }
 
 a:hover {
     text-decoration: none !important;
 }
 
-.logo_text {
+/* .logo_text {
     font-family: "Cormorant SC" !important;
     font-style: normal !important;
     font-weight: 400 !important;
@@ -162,7 +162,7 @@ a:hover {
     line-height: 85% !important;
     text-align: center !important;
     color: #35e8f9 !important;
-}
+} */
 
 .menu_ul li a {
     font-family: "Inter", sans-serif !important;
