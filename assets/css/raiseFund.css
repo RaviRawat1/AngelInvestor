@@ -12,6 +12,18 @@
     src: url(/assets/fonts/Inter-VariableFont.ttf);
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
 @media screen and (min-width:501px) {
     .desktop_heading_65 {
         font-size: 65px;
