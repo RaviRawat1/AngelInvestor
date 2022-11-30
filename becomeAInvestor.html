@@ -10,9 +10,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -70,30 +71,31 @@
             </div>
             <div class="raiseFund_body_2 col-md-6">
                 <p>Please Fill up the form</p>
-                <form class="raiseFund_body_2_1">
+                <form id="frmMain" class="raiseFund_body_2_1">
                     <div class="form-group">
                         <label for="enterFullName"></label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Full Name">
+                        <input type="text" name="name" class="form-control" id="inputAddress" placeholder="Full Name">
                     </div>
 
                     <div class="form-group">
                         <label for="countryName"></label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Nationality">
+                        <select id="countryId" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Choose Nationality</option>
+                            <option value="1">India</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlSelect1"></label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <select id="proofOfAddress" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                             <option selected>Choose Proof of Address</option>
-                            <option value="1">Aadhar Card</option>
-                            <option value="2">Passport</option>
-                            <option value="3">Driving Licence</option>
-                            <!-- <option value="2">MVP</option>
-                            <option value="2">Growth</option> -->
+                            <option value="Aadhar Card">Aadhar Card</option>
+                            <option value="Passport">Passport</option>
+                            <option value="Driving Licence">Driving Licence</option>
                         </select>
                     </div>
                     <div class="my-3">
                         <label for="formFile" class="form-label">Upload a copy of proof (jpeg and jpg)</label>
-                        <input class="form-control" type="file" id="formFile"></input>
+                        <input name="proofOfAddress_doc" class="form-control" type="file" id="formFile"></input>
                     </div>
                     <!-- <h5>Are you an Indian Residence?</h5>
                     <div class="custom-control custom-radio custom-control-inline mb-2">
@@ -114,168 +116,37 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4"></label>
-                            <input type="tel" class="form-control" id="contactNumber" placeholder="Contact Number">
+                            <input type="tel" name="mobileNo" class="form-control" id="contactNumber" placeholder="Contact Number">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputPassword4"></label>
-                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                            <input type="email" name="emailId" class="form-control" id="Email" placeholder="Email">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="enterFullName"></label>
-                        <input type="text" class="form-control" id="panCard" placeholder="Pan Card No.">
+                        <input type="text" name="PAN_No" class="form-control" id="panCard" placeholder="Pan Card No.">
                     </div>
 
                     <h5>Are you a new Angel or existing?</h5>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="new" name="rd" class="custom-control-input " value="new">
+                        <input type="radio" id="new" name="isNewAngel" class="custom-control-input " value="true">
                         <label class="custom-control-label green" for="new">New</label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="existing" name="rd" class="custom-control-input" value="existing">
+                        <input type="radio" id="existing" name="isNewAngel" class="custom-control-input" value="false">
                         <label class="custom-control-label red" for="existing">Existing</label>
                     </div>
 
                     <h5>What is minimum ticket size?</h5>
-                    <div class="custom-control custom-radio custom-control">
-                        <input type="radio" id="ticketSize_0_2" name="ticketSize" class="custom-control-input "
-                            value="ticketSize_0_2">
-                        <label class="custom-control-label green" for="ticketSize_0_2">₹ 1-2 Lakh <span
-                                style="color: red;">*</span></label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control">
-                        <input type="radio" id="ticketSize_5" name="ticketSize" class="custom-control-input "
-                            value="ticketSize_5">
-                        <label class="custom-control-label green" for="ticketSize_2_5">₹ 2-5 Lakh
-                    </div>
-                    <div class="custom-control custom-radio custom-control">
-                        <input type="radio" id="ticketSize_5" name="ticketSize" class="custom-control-input "
-                            value="ticketSize_5">
-                        <label class="custom-control-label green" for="ticketSize_5">₹ 5-10 Lakh</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control">
-                        <input type="radio" id="ticketSize_10" name="ticketSize" class="custom-control-input"
-                            value="ticketSize_10">
-                        <label class="custom-control-label red" for="ticketSize_10">₹ 10-15 Lakh</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control">
-                        <input type="radio" id="ticketSize_15" name="ticketSize" class="custom-control-input "
-                            value="ticketSize_15">
-                        <label class="custom-control-label green" for="ticketSize_15">₹ 15-20 Lakh</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control">
-                        <input type="radio" id="ticketSize_20" name="ticketSize" class="custom-control-input"
-                            value="ticketSize_20">
-                        <label class="custom-control-label red" for="ticketSize_20">₹ 20-25 Lakh</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control">
-                        <input type="radio" id="ticketSize_25" name="ticketSize" class="custom-control-input"
-                            value="ticketSize_25">
-                        <label class="custom-control-label red" for="ticketSize_25">₹ > 25 Lakh</label>
-                    </div>
+                    <div id="tickets"></div>
+                     
 
                     <h5>Which are the top 3 industries you would like to invest in?</h5>
                     <div class="row">
                         <div class="col-12">
-                            <ul style="padding: 0;">
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Ed Tech</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Gender Focus</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Fintech</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Pharma</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>HealthTech</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Hospitality</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Infrastructure</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Food and Dining</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>FMCG</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Financial Services</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Natural resources - water /
-                                            energy / environment </span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Crypto / NFT</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Tech/ SaaS</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Agri Tech</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Web 3.0</span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="checkbox" />
-                                        <span>Others</span>
-                                    </label>
-                                </li>
+                            <ul id="industry-ul" style="padding: 0;"> 
                             </ul>
                         </div>
                     </div>
@@ -283,22 +154,22 @@
                     <h5>Would you like to be updated on all deals or only those in areas you
                         have ticked </h5>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="allDeals" name="deals" class="custom-control-input " value="allDeals">
-                        <label class="custom-control-label green" for="allDeals">Yes, all deals </label>
+                        <input type="radio" id="isAllDealsUploaded_y" name="isAllDealsUploaded" class="custom-control-input " value="true">
+                        <label class="custom-control-label green" for="isAllDealsUploaded_y">Yes, all deals </label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="choosen" name="deals" class="custom-control-input" value="choosen">
-                        <label class="custom-control-label red" for="choosen">No, only those I have chosen</label>
+                        <input type="radio" id="isAllDealsUploaded_n" name="isAllDealsUploaded" class="custom-control-input" value="false">
+                        <label class="custom-control-label red" for="isAllDealsUploaded_n">No, only those I have chosen</label>
                     </div>
 
                     <h5>Are you intersted in mentoring to other startups?</h5>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="allDeals" name="deals" class="custom-control-input " value="allDeals">
-                        <label class="custom-control-label green" for="allDeals">Yes </label>
+                        <input type="radio" id="isIntersted_y" name="isIntersted" class="custom-control-input " value="true">
+                        <label class="custom-control-label green" for="isIntersted_y">Yes </label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="choosen" name="deals" class="custom-control-input" value="choosen">
-                        <label class="custom-control-label red" for="choosen">No</label>
+                        <input type="radio" id="isIntersted_n" name="isIntersted" class="custom-control-input" value="false">
+                        <label class="custom-control-label red" for="isIntersted_n">No</label>
                     </div>
 
 
@@ -320,14 +191,13 @@
                         </li>
                     </ol>
                     <div class="form-check form-check" style="margin-top: 50px; margin-left: 5px;">
-                        <input class="form-check-input" type="checkbox" id="t&c" value="t&c">
+                        <input id="iAgree" class="form-check-input" type="checkbox" id="t&c">
                         <label class="form-check-label" for="t&c">I agree to all <a href="#"
                                 style=" color: green; text-decoration: underline;">Terms and Coditions</a></label>
                     </div>
-                    <a href="messageRaiseFundForm.html">
-                        <button type="submit" style="margin-top: 25px;"
-                            class="btn custom_submit_button col-md-12">Submit</button>
-                    </a>
+                     
+                        <button type="button" id="onSubmitInvestor" style="margin-top: 25px;" class="btn custom_submit_button col-md-12">Submit</button>
+                     
                 </form>
             </div>
         </div>
@@ -350,6 +220,7 @@
     </footer>
 
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/core.js"></script>
 </body>
 
 </html>
