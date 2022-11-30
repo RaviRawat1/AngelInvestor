@@ -38,12 +38,12 @@
             var $frmMain=$("#frmMain");
             var data = $frmMain.serializeObject();
             console.log(data);
-            // $.post(`${REACT_APP_API_URL}/investor/createProfile_step1`, data).then(resp=>{
-            //     console.log("createProfile_step1 resp", resp);
-            //     if(resp.responseCode==200){
-            //         window.location.replace("messageRaiseFundForm.html");
-            //     }
-            // });
+            $.post(`${REACT_APP_API_URL}/investor/createProfile_step1`, data).then(resp=>{
+                console.log("createProfile_step1 resp", resp);
+                if(resp.responseCode==200){
+                    window.location.replace("messageRaiseFundForm.html");
+                }
+            });
         }
     })
 
