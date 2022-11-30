@@ -43,6 +43,9 @@
                 if(resp.responseCode==200){
                     window.location.replace("messageRaiseFundForm.html");
                 }
+                else{
+                    alert(resp.responseMessage??"Oops!. somthing went wrond. plz try after some time.")
+                }
             });
         }
     })
