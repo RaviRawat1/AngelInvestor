@@ -74,177 +74,106 @@
             </div>
             <div class="raiseFund_body_2 col-md-5">
                 <p>Please Fill up the form</p>
-                <form class="raiseFund_body_2_1">
+                <form id="frmMain" class="raiseFund_body_2_1">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="userName"></label>
-                            <input type="text" class="form-control" id="userName" placeholder="Full Name">
+                            <label for="name"></label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Full Name">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputPassword4"></label>
-                            <input type="tel" class="form-control" id="contactNumber" placeholder="Contact Number">
+                            <label for="mobileNo"></label>
+                            <input type="tel" name="mobileNo" class="form-control" id="mobileNo" placeholder="Contact Number">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputAddress"></label>
-                        <input type="email" class="form-control" id="inputAddress" placeholder="Email">
+                        <label for="emailId"></label>
+                        <input type="email" name="emailId" class="form-control" id="emailId" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label for="countryName"></label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="Nationality">
+                        <label for="countryId"></label>
+                        <select name="countryId" id="countryId" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected>Choose Nationality</option> 
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1"></label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <label for="proofOfAddress"></label>
+                        <select name="proofOfAddress" id="proofOfAddress" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                             <option selected>Choose Proof of Address</option>
-                            <option value="1">Aadhar Card</option>
-                            <option value="2">Passport</option>
-                            <option value="3">Driving Licence</option>
-                            <!-- <option value="2">MVP</option>
-                            <option value="2">Growth</option> -->
+                            <option value="Aadhar Card">Aadhar Card</option>
+                            <option value="Passport">Passport</option>
+                            <option value="Driving Licence">Driving Licence</option>
                         </select>
                     </div>
                     <div class="my-3">
                         <label for="formFile" class="form-label">Upload a copy of proof (jpeg and jpg)</label>
-                        <input class="form-control" type="file" id="formFile"></input>
+                        <input name="proofOfAddress_doc" class="form-control" type="file" id="formFile"></input>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputEmail4"></label>
-                            <input type="text" class="form-control" id="inputEmail4" placeholder="Company Name">
+                            <label for="companyName"></label>
+                            <input name="companyName" type="text" class="form-control" id="companyName" placeholder="Company Name">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputPassword4"></label>
-                            <input type="number" min="1975" max="2022" class="form-control" id="inputPassword4"
+                            <label for="yearFounded"></label>
+                            <input type="number" name="yearFounded" min="1975" max="2022" class="form-control" id="yearFounded"
                                 placeholder="Year Founded">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1"></label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <label for="stage"></label>
+                        <select name="stage" id="stage" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                             <option selected>Choose stage, Idea stage etc.</option>
-                            <option value="1">Ideation</option>
-                            <option value="2">Seed</option>
-                            <option value="3">Bridge</option>
+                            <option value="Ideation">Ideation</option>
+                            <option value="Seed">Seed</option>
+                            <option value="Bridge">Bridge</option>
                             <!-- <option value="2">MVP</option>
                             <option value="2">Growth</option> -->
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="overallRaised"></label>
-                        <input type="text" class="form-control" id="investmentSize"
+                        <label for="investmentRaised"></label>
+                        <input type="text" name="investmentRaised" class="form-control" id="investmentRaised"
                             placeholder="Overall investment Raised">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1"></label>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                        <label for="fundRaiseRequiredId"></label>
+                        <select name="fundRaiseRequiredId" id="fundRaiseRequiredId" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                             <option selected>Fund raise required (in Rs)</option>
-                            <option value="1">₹ 50L - 1Cr</option>
+                            <!-- <option value="1">₹ 50L - 1Cr</option>
                             <option value="2">₹ 1Cr - 2.5Cr</option>
-                            <option value="3">₹ 2.5Cr - 5Cr</option>
-                            <!-- <option value="3">₹ 25L - 1Cr</option> -->
-                            <option value="3">₹ 5Cr +</option>
+                            <option value="3">₹ 2.5Cr - 5Cr</option> 
+                            <option value="3">₹ 5Cr +</option> -->
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="websiteUrl"></label>
-                        <input type="text" class="form-control" id="websiteUrl" placeholder="Website URL">
+                        <input type="text" name="websiteUrl" class="form-control" id="websiteUrl" placeholder="Website URL">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1"></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        <label for="businessDescription"></label>
+                        <textarea name="businessDescription" class="form-control" id="businessDescription" rows="3"
                             placeholder="Bussiness Description & ESG Impact ( 200 words)"></textarea>
                     </div>
                     <h5>Do You Need Mentorship?</h5>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="allDeals" name="deals" class="custom-control-input " value="allDeals">
-                        <label class="custom-control-label green" for="allDeals">Yes </label>
+                        <input type="radio" id="isMentorshipNeed_y" name="isMentorshipNeed" class="custom-control-input " value="true">
+                        <label class="custom-control-label green" for="isMentorshipNeed_y">Yes </label>
                     </div>
                     <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="choosen" name="deals" class="custom-control-input" value="choosen">
-                        <label class="custom-control-label red" for="choosen">No</label>
+                        <input type="radio" id="isMentorshipNeed_n" name="isMentorshipNeed" class="custom-control-input" value="false">
+                        <label class="custom-control-label red" for="isMentorshipNeed_n">No</label>
                     </div>
-                    <!-- <h5><label>Select potential SDG Goals that your business addresses: <a href="#" style=" color: green; text-decoration: underline;"><sup>Know More</sup></a></label></h5>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                        <label class="form-check-label" for="inlineCheckbox1">1</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                        <label class="form-check-label" for="inlineCheckbox2">2</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-                        <label class="form-check-label" for="inlineCheckbox3">3</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                        <label class="form-check-label" for="inlineCheckbox4">4</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                        <label class="form-check-label" for="inlineCheckbox5">5</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-                        <label class="form-check-label" for="inlineCheckbox6">6</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                        <label class="form-check-label" for="inlineCheckbox7">7</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                        <label class="form-check-label" for="inlineCheckbox8">8</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-                        <label class="form-check-label" for="inlineCheckbox9">9</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                        <label class="form-check-label" for="inlineCheckbox10">10</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                        <label class="form-check-label" for="inlineCheckbox11">11</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-                        <label class="form-check-label" for="inlineCheckbox12">12</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
-                        <label class="form-check-label" for="inlineCheckbox13">13</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                        <label class="form-check-label" for="inlineCheckbox14">14</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-                        <label class="form-check-label" for="inlineCheckbox15">15</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
-                        <label class="form-check-label" for="inlineCheckbox16">16</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" />
-                        <label class="form-check-label" for="inlineCheckbox17">17</label>
-                    </div> -->
 
                     <div class="my-3">
-                        <label for="formFile" class="form-label">Attach a pitch deck (.pdf, ppt and video files)</label>
-                        <input class="form-control" type="file" id="formFile"></input>
+                        <label for="deck_doc" class="form-label">Attach a pitch deck (.pdf, ppt and video files)</label>
+                        <input name="deck_doc" class="form-control" type="file" id="deck_doc"></input>
                     </div>
                     <div class="form-check form-check" style="margin-top: 50px; margin-left: 5px;">
-                        <input class="form-check-input" type="checkbox" id="t&c" value="t&c">
+                        <input id="iAgree" class="form-check-input" type="checkbox" id="t&c">
                         <label class="form-check-label" for="t&c">I agree to all <a href="#"
                                 style=" color: green; text-decoration: underline;">Terms and Coditions</a></label>
                     </div>
-                    <button type="button" onclick="location.href='messageRaiseFundForm.html'"
-                        class="btn custom_submit_button col-md-12 my-2">Submit</button>
+                    <button type="button" id="onSubmitFounder" class="btn custom_submit_button col-md-12 my-2">Submit</button>
                 </form>
             </div>
         </div>
@@ -282,6 +211,7 @@
 
 
     <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/core.js"></script>
 </body>
 
 </html>
