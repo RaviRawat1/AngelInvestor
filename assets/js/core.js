@@ -38,7 +38,7 @@
             var $frmMain=$("#frmMain");
             var data = $frmMain.serializeObject();
             console.log(data);
-            $.post(`${REACT_APP_API_URL}/investor/createProfile_step1`, data).then(resp=>{
+            $.post(`${REACT_APP_API_URL}/investor/createProfile_step1`, data).done(resp=>{
                 console.log("createProfile_step1 resp", resp);
                 if(resp.responseCode==200){
                     window.location.replace("messageRaiseFundForm.html");
@@ -46,7 +46,7 @@
                 else{
                     alert(resp.responseMessage??"Oops!. somthing went wrond. plz try after some time.")
                 }
-            });
+            }).fail((err)=> alert("input value is not valid"));
         }
     })
 
