@@ -129,15 +129,22 @@
                         <input type="text" name="PAN_No" class="form-control" id="panCard" placeholder="Pan Card No.">
                     </div>
 
-                    <h5>Are you a new Angel or existing?</h5>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="new" name="isNewAngel" class="custom-control-input " value="true">
-                        <label class="custom-control-label green" for="new">New</label>
+                    <h5>How many Angel Investments did you make as of now</h5>
+                    <div id=""><div class="custom-control custom-radio custom-control">
+                        <input type="radio" name="minimumTicketSizeId" id="ticketSize_41" class="custom-control-input" value="4">
+                        <label class="custom-control-label red" for="ticketSize_41">0</label>
+                    </div><div class="custom-control custom-radio custom-control">
+                        <input type="radio" name="minimumTicketSizeId" id="ticketSize_51" class="custom-control-input" value="5">
+                        <label class="custom-control-label red" for="ticketSize_51">1-5</label>
+                    </div><div class="custom-control custom-radio custom-control">
+                        <input type="radio" name="minimumTicketSizeId" id="ticketSize_61" class="custom-control-input" value="6">
+                        <label class="custom-control-label red" for="ticketSize_61">6-10</label>
                     </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                        <input type="radio" id="existing" name="isNewAngel" class="custom-control-input" value="false">
-                        <label class="custom-control-label red" for="existing">Existing</label>
-                    </div>
+                    <div class="custom-control custom-radio custom-control">
+                        <input type="radio" name="minimumTicketSizeId" id="ticketSize_71" class="custom-control-input" value="7">
+                        <label class="custom-control-label red" for="ticketSize_71">More than 10</label>
+                    </div></div>
+                    
 
                     <h5>What is minimum ticket size?</h5>
                     <div id="tickets"></div>
@@ -173,7 +180,7 @@
                     </div>
 
 
-                    <h5>
+                    <!-- <h5>
                         Do review the information below carefully, before pressing submit
                     </h5>
                     <ol>
@@ -189,7 +196,7 @@
                             consequences if I falsely represent my accreditation status.</li>
                         <li>I declare that I am resident of India, if not I will seperately inform AngelEye in writing.
                         </li>
-                    </ol>
+                    </ol> -->
                     <div class="form-check form-check" style="margin-top: 50px; margin-left: 5px;">
                         <input id="iAgree" class="form-check-input" type="checkbox" id="t&c">
                         <label class="form-check-label" for="t&c">I agree to all <a href="#"
