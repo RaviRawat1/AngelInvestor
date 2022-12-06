@@ -1,7 +1,7 @@
 (function (window, document, $, undefined) {
     'use strict';
-    //const REACT_APP_API_URL="https://seal-app-wwrpt.ondigitalocean.app/api/v1";
-    const REACT_APP_API_URL="http://localhost:8080/api/v1";
+    const REACT_APP_API_URL="https://seal-app-wwrpt.ondigitalocean.app/api/v1";
+    //const REACT_APP_API_URL="http://localhost:8080/api/v1";
 
     $(document).ready(function(){
         $.get(`${REACT_APP_API_URL}/country/ddl/`).then(resp=>{
