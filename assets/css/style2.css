@@ -725,6 +725,13 @@ a:hover {
     /* margin-top: 68px; */
     width: 250px;
 }
+.section_6_2_1_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 68px; */
+    width: 300px;
+}
 
 .section_6_2_1_1 h5 {
     font-family: 'Inter', sans-serif;
@@ -1192,7 +1199,13 @@ raiseFund Style
     transition: left 300ms;
     width: 25px;
 }
-
+.arrow_image_Small {
+    position: relative;
+    left: -10px;
+    
+    transition: left 300ms;
+    width: 25px;
+}
 .custom_submit_button {
     background: #A3E074 !important;
     border-radius: 5px;
@@ -1329,3 +1342,45 @@ raiseFund Style
         transform: rotate(-360deg);
     }
 }
+
+.row-leftRight {
+    /* position: absolute; */
+    width: 1440px;
+    height: 1px;
+    left: 0px;
+    top: 488px;
+    background: #E7E7E7;
+
+}
+
+.row-TopButtom {
+    /* position: absolute; */
+    width: 1px;
+    height: 5   00px;
+    left: 720px;
+    top: 488px;
+    background: #E7E7E7;
+}
+
+@media (max-width: 767px) {
+    .hidden-mobile {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .hidden-mobile-width {
+        display: none;
+    }
+}
+.boxView{
+    /* position: absolute; */
+width: 55px;
+height: 55px;
+left: 760px;
+top: 574px;
+background: #F5F5F5;
+border-radius: 4px;
+justify-content: center;
+align-items: center;
+}
+
